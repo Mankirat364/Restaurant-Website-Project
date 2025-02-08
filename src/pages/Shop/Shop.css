@@ -1,0 +1,146 @@
+.shopBgImage {
+    background-image: url('../../assets/shopBgImage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+}
+
+.shopBgImage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(24, 23, 23, 0.5);
+    z-index: 1;
+}
+
+.shopText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    z-index: 2;
+}
+.shopText h1 {
+    font-weight: bold;
+    color: #ffff;
+}
+.shopText p {
+    color: #ffff;
+    font-weight: 600;
+}
+.shopText span {
+    color: red;
+}
+.container {
+    margin-top: 10%;
+}
+.shopCard {
+    border: 1px solid rgb(192, 190, 190);
+    height: 250px;
+    width: 250px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 40px;
+    position: relative;
+    transition: box-shadow 0.1s ease-in-out;
+}
+.shopCard:hover{
+    border:none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); 
+    padding:0 4px;
+}
+.shopCard:hover .cart {
+    background-color: orange; 
+    color: white;
+}
+
+.shopImg img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+  }
+.shopCard .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+.shopCard .text h5 {
+    padding-top: 5rem;
+    font-weight: bold;
+}
+.shopCard .text h5:hover {
+    color:red;
+}
+.shopCard .text p {
+    padding: 0 6px;
+    font-size: 14px;
+    text-align: center;
+}
+.shopCard .text .desc{
+    color:gray;
+}
+.bottomText{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25%;
+}
+ .bottomText p{
+   margin:5px;
+}
+.bottomText .price{
+    font-weight: bold;
+}
+.bottomText .rating {
+    display: flex;
+    gap: 5px;
+    color: orange
+} 
+.cart{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:50px;
+    height:40px;
+    border-top-left-radius:25px; 
+    background-color: black;
+    color:white;
+    z-index: 2;
+    cursor:pointer;
+}  
+
+.shopCard .cart:hover {
+    background-color: red; 
+}
+.cart p {
+    margin: 0; 
+}
+
+@media (max-width:567px){
+    .shopCards{
+        display:flex;
+        justify-content: center;
+        align-items:center ;
+    }
+    
+}
+
+
+
