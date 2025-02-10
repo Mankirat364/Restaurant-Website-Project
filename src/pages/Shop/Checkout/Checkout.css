@@ -1,0 +1,34 @@
+.input-bg{
+    background-color: #fefaf7;
+}
+.check-button {
+    width: 35%;
+    padding: 12px;
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.check-button:hover {
+    background-color: black;
+}
+
+@media (max-width:567px){
+    .check-button {
+        width:50%;
+        padding: 12px;
+        background-color: #e4002b;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 15px;
+    }  
+}

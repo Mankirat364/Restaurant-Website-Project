@@ -1,0 +1,261 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  padding: 10px 5vw;
+  background-color: #eb0027;
+  border-bottom: 1px solid #e7e7e7;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  --mask:
+  radial-gradient(50.4px at 50% calc(100% - 70.5px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+  radial-gradient(50.4px at 50% calc(100% + 40.5px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+  
+-webkit-mask: var(--mask);
+        mask: var(--mask);
+        width:100vw;
+        
+}
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.navbar-top .location,
+.navbar-top .auth {
+  position: relative;
+  z-index: 2; /* Keeps the content above the wave */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  color: white;
+}
+
+.follow {
+  font-size: 14px;
+  
+}
+.navbar-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+  z-index: 50;
+  width:100vw;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: 0.3s ease-in-out;
+  padding: 10px 20px;
+}
+
+.navbar-bottom {
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: -4vw;
+  left: 0;
+  width: 200%;
+  height: 60px;
+  background-color: #fff;
+  
+  --mask:
+    radial-gradient(50.4px at 50% calc(100% - 70.5px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(50.4px at 50% calc(100% + 40.5px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  animation: waveMove 14s linear infinite;
+}
+@keyframes waveMove {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes waveMove2 {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+#darkLogo{
+  width: 12vw;
+}
+.location{
+  display: flex;
+  align-items: center;
+}
+.auth{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.follow{
+  padding-left: 1vw;
+}
+.initial{
+  display: none;
+}
+.location, .auth {
+  font-size: 14px;
+  padding-bottom: 3vw;
+}
+.location img{
+  width: 3vh;
+  height: 3vh;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+ 
+}
+
+.social-icons svg {
+  cursor: pointer;
+}
+.button button{
+  text-transform: uppercase;
+  display: flex;
+  align-items: center ;
+  background-color: #eb0027;
+  border: none;
+  color: white;
+  width: fit-content;
+  padding: 1vw;
+  border-radius: 12px;
+  gap: 6px;
+}
+.button{
+
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links span {
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-icons svg {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffedf0;
+  color: black;
+  width: 150px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  z-index: 2000;
+  flex-direction: column;
+}
+.dropdown span{
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+.pack{
+  display: flex;
+  align-items: center ;
+}
+.dropdown span {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropdown span:hover {
+  color: #eb0027;
+}
+
+@media (max-width: 768px) {
+  .location{
+    display: none !important;
+  }
+  .auth {
+    font-size: 14px;
+    padding-bottom: 9vw;
+}
+.navbar-bottom {
+  padding: 0px 20px;
+}
+.navbar-bottom::after {
+  bottom: -15vw;
+}
+.button{
+  display: none;
+}
+#darkLogo {
+  width: 35vw;
+}
+.initial{
+  display: block;
+}
+.nav-links{
+  display: none;
+}
+}

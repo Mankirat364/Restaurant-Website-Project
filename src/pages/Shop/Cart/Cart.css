@@ -1,0 +1,190 @@
+
+.cartImage {
+    width: 70px;
+    height: 70px;
+    padding-top: 0px;
+}
+.image-name{
+    display:flex ;
+    padding-top:5px;
+    align-items: center;
+}
+.item-name{
+    font-weight: bold;
+    margin-left: 4px;
+}
+.counter-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 50px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.counter-value {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.counter-buttons {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #ccc;
+}
+
+.counter-btn {
+    padding: 5px;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-size: 16px;
+}
+.remove{
+    border:none;
+    outline:none;
+    padding:30px;
+    background-color:#fff;
+}
+.padding{
+    padding:30px 0;
+}
+.second-section{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+
+.counter-btn.plus {
+    border-bottom: 1px solid #ccc;
+}
+
+.counter-btn:hover {
+    background: #e0e0e0;
+}
+.coupon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.coupon-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.coupon-input {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 250px;
+    outline: none;
+}
+
+.coupon-input::placeholder {
+    color: #aaa;
+}
+
+.apply-button {
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.apply-button:hover {
+    background-color: black;
+}
+.update-cart{
+    margin-left:80%;
+    margin-top: 6%;
+}
+.subtotal-container {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    margin:2rem 0 0 51rem ;
+}
+
+.subtotal-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.subtotal-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e4002b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.checkout-button:hover {
+    background-color: #c20024;
+}
+
+
+@media (max-width:576px) {
+    .second-section{
+        display:flex;
+        flex-direction: column;
+    }
+    .update-cart{
+        margin:20px 0 0 0;
+    }
+    .subtotal-container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 8px;
+        margin:20px 0 0 0;
+    }
+   table{
+     overflow-x: scroll;
+   }
+}
+
+

@@ -1,43 +1,4 @@
-.shopBgImage {
-    background-image: url('../../assets/shopBgImage.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vh;
-    position: relative;
-}
 
-.shopBgImage::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(24, 23, 23, 0.5);
-    z-index: 1;
-}
-
-.shopText {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    z-index: 2;
-}
-.shopText h1 {
-    font-weight: bold;
-    color: #ffff;
-}
-.shopText p {
-    color: #ffff;
-    font-weight: 600;
-}
-.shopText span {
-    color: red;
-}
 .container {
     margin-top: 10%;
 }
@@ -60,7 +21,6 @@
     background-color: orange; 
     color: white;
 }
-
 .shopImg img {
     width: 120px;
     height: 120px;
@@ -132,6 +92,7 @@
 .cart p {
     margin: 0; 
 }
+
 
 @media (max-width:567px){
     .shopCards{

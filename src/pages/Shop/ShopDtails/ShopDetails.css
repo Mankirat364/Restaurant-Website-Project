@@ -1,0 +1,262 @@
+.shopdetails-bg{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #fefaf7;
+    border-radius: 10px;
+    height:75vh;
+}
+.shop-details-page{
+  width:75vw;
+}
+
+.shop-details-image{
+  width:30vw;
+}
+.item-name-price{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.star-rating {
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .star {
+    color: rgb(255, 174, 0);
+  }
+  .review{
+    font-size:16px;
+    margin-top:8px;
+    color:gray;
+  }
+ 
+  .details-para{
+    font-size: 16px;
+    color:gray;
+  }
+  
+   .quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.quantity {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quantity .buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity button {
+    width: 25px;
+    height: 20px;
+    border: none;
+    background: #f8f8f8;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.quantity button:hover {
+    background: #e0e0e0;
+} 
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top:20px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-btn, .wishlist-btn {
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+  }
+  
+  .cart-btn {
+    background-color: #e4002b;
+    color: white;
+  }
+  .cart-btn:hover{
+    background-color: rgb(255, 174, 0);
+  }
+  
+  .wishlist-btn {
+    background-color: rgb(255, 174, 0);
+    color: white;
+  }
+  .wishlist-btn:hover{
+    background-color: #e4002b;
+  }
+  .share-friends{
+    display:flex;
+    gap:15px;
+
+  }
+  .share-text {
+    margin-top: 18px;
+    color: #666;
+    font-size: 16px;
+  }
+  .share-friend{
+     display:flex;
+     margin-top: 12px;
+     gap:10px;
+  }
+  .share-friends-icons{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:1px solid rgb(160, 159, 159);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .share-friends-icons:hover{
+    background-color: #e4002b;
+    color:#f8f8f8;
+    outline:none;
+    border:none;
+  }
+  .product-description{
+    margin-top:35px;
+  }
+  .product-description h4{
+    font-weight: bold;
+  }
+
+  .description-review h4{
+    font-weight: bold;
+  }
+  .reviewer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:3%;
+  }
+  .identity{
+    display: flex;
+    flex-direction: column;
+    margin:20px 0 0 10px;
+  }
+  .review-para{
+    margin:0 0 0 10%;
+  }
+  .rate-product {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between text and stars */
+  }
+  .review-form {
+  
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  .note {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+  }
+  
+  .rate-product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .product-star-rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;;
+  }
+  .input-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .input-field {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .review-textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #f8f1eb;
+    background: #fefaf7;
+    resize: none;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  
+/**************** media query  ******************/
+
+@media (max-width:567px){
+  .shop-details-page{
+    width:100vw;
+  }
+  .shopdetails-bg{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #fefaf7;
+    border-radius: 10px;
+    height:50vh; 
+}
+.shop-details-image{
+  width:60vw;
+}
+.review-para{
+  margin:0;
+}
+
+}
+  
+  
+ 
+ 
+
+ 

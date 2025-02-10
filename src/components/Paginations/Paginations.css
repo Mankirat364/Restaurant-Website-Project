@@ -1,0 +1,36 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-arrow, .page-number {
+    border-radius: 50%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    margin: 10px 5px 0 5px;
+    background-color: pink;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.one {
+    background-color: #ffff;
+    border: 1px solid red;
+}
+
+.page-arrow:hover, .page-number:hover {
+    background-color: red;
+    color: white;
+}
+

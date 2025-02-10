@@ -1,0 +1,213 @@
+.HomePage{
+    background-color: #ffe9c7;
+    min-height: 100vh;
+}
+.innerhomecontainer{
+    position: relative  ;
+    width: 100%;
+    min-height: 100vh;
+}
+#banner{
+    position: absolute;
+}
+.dividerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4vw;
+    gap: 10px;
+}
+.cardContainer{
+    width: 50vw;
+    height: 50vh;
+    margin-left: 5vw;
+    overflow: hidden;
+    margin-bottom: 4vw;
+    
+}
+.cardContainer2{
+    background-color: #eb0027;
+    width: 50vw;
+    height: 83vh;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius:50%;
+    position: relative;
+}
+.cardContainer2 img{
+    position: absolute;
+    width:35vw;
+    left: 3%;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.slider {
+    display: flex;
+    width: 300%; 
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+  }
+.cardContainer p{
+    color: #eb0027;
+    font-size: 2.3vw;
+}
+.imagediv{
+    width: 16vw;
+    height: 9vh;
+    background-color: white;
+    
+    border-radius: 33px;
+    border: none !important;
+    overflow: hidden;
+}
+.cardContainer h1{
+    display: flex;
+    font-size: 4.5vw;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 10px;
+    align-items: center;
+}
+.imagediv img{
+    width: 100%;
+    height: 100%;
+    scale: 1.4;
+    border-radius: 33px;
+}
+.textfix{
+    margin-top: -2vw;
+}
+.descri{
+    font-size: 1.3vw !important;
+    color: black !important;
+    padding-top: .5vw;
+}
+#homebutton{
+    padding-top: 2vw;
+    border: none;
+}
+#vegie{
+    position: absolute;
+    bottom: -4%;
+    width: 10vw;
+}
+.loader {
+    display: flex;
+    width: 80%;
+    height: 5px;
+    margin: auto;
+    margin-top: 2vw;
+    background-color: rgb(255, 170, 170);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.loader-section {
+    flex: 1;
+    background-color: rgb(255, 200, 200);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.loader-section.active {
+    background-color: red; /* Active section turns red */
+}
+
+/* Arrow Button Styling */
+.buttoner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.arrow {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+.loaderflexbox{
+    position: relative;
+}
+.buttoner{
+    position: absolute;
+    right: 3%;
+    top: 0%;
+    transform: translate(0%,-50%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.navigateNumber{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.navigateNumber p{
+    color: black;
+    font-size: 2vw;
+    font-weight: bold;
+}
+#rotatearrow{
+    transform: rotate(180deg);
+}
+@media (max-width: 768px){
+    .dividerContainer{
+        flex-direction: column-reverse;
+    }
+    
+    .cardContainer2 {
+        background-color: #eb0027;
+        width: 100vw;
+        height: 44vh;
+        border-top-left-radius: 64%;
+    border-bottom-left-radius: 64%;
+    margin-top: 10vw;
+    }
+.cardContainer2 img {
+    position: absolute;
+    width:75vw;
+}
+.cardContainer {
+    width: 100vw;
+}
+.navigateNumber p{
+    font-size: 7vw;
+}
+.cardContainer p {
+    font-size: 6vw;
+}
+.cardContainer h1 {
+    font-size: 10.5vw;
+}
+.imagediv {
+    width: 39vw;
+}
+.descri {
+    font-size: 6.3vw !important;
+    width: 30%;
+}
+#vegie {
+    width: 18vw;
+}
+
+.loaderflexbox{
+    margin-bottom: 17vw !important;
+}
+
+.buttoner {
+    right: 39%;
+    bottom: -16vw;
+    transform: translate(0%, 0%);
+}
+}

@@ -1,0 +1,27 @@
+.container{
+    margin-top:5%;
+}
+
+.pages-food-name{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:3%;
+}
+.pages-food-name button{
+    padding:5px 10px;
+    border-radius:25px;
+    outline:none;
+    border:1px solid gray;
+    background-color:#ffff; 
+    font-weight:bold; 
+    transition: all 0.3s ease-in-out;
+}
+.pages-food-name button:first-child {
+    border: 1px solid orange;
+    color: orange;
+}
+.pages-food-name button:hover{
+    border:1px solid orange;
+    color:orange;
+}
