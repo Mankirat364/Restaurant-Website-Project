@@ -1,0 +1,134 @@
+.videosection {
+    min-height: 100vh;
+    background-color: rgb(232, 232, 232); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videocontainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+}
+
+.videodiv {
+    width: 75vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.1); /* Soft shadow */
+}
+
+.imagevideodiv {
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagevideodiv img {
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darken for effect */
+}
+
+/* Play Button */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphism */
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.play-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Play Icon */
+.play-icon {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Smooth Bouncing Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Rotating Circular Text */
+.rotating-text {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotateText 5s linear infinite;
+}
+
+.rotating-text text {
+    font-size: 8px;  /* Increased from 5px to 8px */
+    text-transform: uppercase;
+    fill: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+@keyframes rotateText {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .videodiv {
+        width: 90vw;
+        height: 50vh;
+    }
+    .play-button {
+        width: 90px;
+        height: 90px;
+    }
+    .rotating-text {
+        width: 100px;
+        height: 100px;
+    }
+    .rotating-text text {
+        font-size: 10px
+    }
+    .play-icon {
+        font-size: 20px;
+    }
+}

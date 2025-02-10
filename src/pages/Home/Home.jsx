@@ -7,6 +7,14 @@ import { BsArrowRightSquareFill, BsArrowLeftSquareFill } from 'react-icons/bs';
 import foodback from '../../assets/food.png';
 import vegie from '../../assets/vegie.png';
 import About from '../About/About';
+import Food from '../../components/Food';
+import Video from '../../components/Video';
+import Discount from '../../components/Discount';
+import SpecialMenu from '../../components/SpecialMenu';
+import Price from '../../components/Price';
+import Contact from '../../components/Contact';
+import Testimonial from '../../components/Testimonial';
+import NewsBlog from '../../components/NewsBlog';
 
 const Home = () => {
   const object = {
@@ -76,12 +84,11 @@ const Home = () => {
                   <h1>Premium <div className="imagediv"><img src={bannerimage} alt="" /></div></h1>
                   <h1 className='textfix'>Restaurant/Cafes</h1>
                   <p className='descri'>
-                    It is a long established fact that a reader will be distracted by the readable content of a <br/> 
+                    It is a long established fact that a reader will be distracted by the readable<br/>  content of a 
                     page when looking at the layout.
                   </p>
                   <motion.div 
                     className="button" id='homebutton'
-                    whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >
                     <button>Order now <BsArrowRightSquareFill size={20} /></button>
@@ -134,6 +141,14 @@ const Home = () => {
       </div>
 
       <About />
+      <Food />
+      <Video />
+      <Discount />
+      <SpecialMenu />
+      <Price />
+      <Contact />
+      <Testimonial />
+      <NewsBlog />
     </motion.div>
   );
 };

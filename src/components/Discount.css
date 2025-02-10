@@ -1,0 +1,113 @@
+.DiscountSection{
+    background-color: rgb(232, 232, 232); 
+    min-height: 100vh;
+}
+.discountContent{
+    padding: 5vw;
+}
+.discountContent :nth-child(1){
+    color: red;
+    font-weight: bold;
+}
+.disheading{
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+.queshead{
+    font-weight: 600;
+}
+.quesdesc{
+    margin-top: -1vw;
+    line-height: 1.2;
+    color: rgb(94, 94, 94);
+}
+.DiscHead{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.daysBlock{
+    background-color: #faa019;
+    padding: 1vw;
+    border-radius: 12px;
+}
+.number{
+    color: white !important;
+    font-size:2vw !important;
+    border-bottom: 1px solid white;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+.days{
+    color: white !important;
+    text-align: center;
+    font-size: 1.5vw !important;
+}
+#Discountbutton{
+    color: rgb(219, 0, 0) !important;
+    background-color: transparent;
+    border: 1px solid red;
+    
+}
+#Discountbutton :nth-child(1){
+    color: red !important;
+}
+.discountimagediv{
+    margin-top: 4vw;
+    width: 45vw;
+    height: 90vh;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+}
+.discountimagediv img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discountimagediv :nth-child(2){
+    position: absolute;
+    right: 0;
+    top: 30%;
+    transform: translate(-50%,0%);
+    width: 25vh;
+    height: 25vh;
+}
+@media (max-width: 768px){
+    .DiscountSection {
+        margin-top: -26vw;
+    }
+    .disheading {
+        font-size: 7.5vw;
+    }
+    .queshead {
+        font-size: 4vw;
+    }
+    .quesdesc {
+        margin-top: -3vw;
+        color: rgb(94, 94, 94);
+        font-size: 3vw;
+    }
+    .DiscHead {
+        font-size: 6.5vw;
+    }
+    .daysBlock {
+        background-color: #faa019;
+        padding: 3vw;
+    }
+    .days {
+        color: white !important;
+        text-align: center;
+        font-size: 5vw !important;
+    }
+    .daysBlock .number{
+        display: block !important;
+    }
+    .number {
+        font-size: 8vw !important;
+    }
+    .discountimagediv {
+        width: 93vw;
+        height: 46vh;
+    }
+}

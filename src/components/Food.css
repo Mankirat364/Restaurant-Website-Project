@@ -1,0 +1,196 @@
+.foodSection{
+    min-height: 100vh;
+    background: url('../assets/foods-bg.jpg');
+    background-size: cover;
+    position: relative;
+}
+.foodtitle{
+    padding-top: 5vw;
+}
+.foodhead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fooddesc p{
+    color: red;
+    font-weight: bold;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.foodtitle h1{
+    text-align: center;
+    font-weight: bold;
+}
+.foodCard{
+    background-color: white;
+    width: 20vw;
+    height: 48vh;
+    border-top-right-radius:34px;
+    border-bottom-left-radius:34px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    position: relative;
+}
+.logo2{
+    display: flex;
+    justify-content: center;
+}
+.logo2 img{
+    margin-top: -5vw;
+}
+.foodCardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.foodCardContent p{
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding-top: 1vw;
+}
+.foodCardContent h6{
+    font-weight: 400;
+    color: grey;
+}
+.foodrating{
+    display: flex;
+    align-items: center;
+}
+.foodprice p{
+    font-weight: bold;
+}
+.stars-container {
+    display: flex;
+    gap: 1px;
+    padding-bottom: 1.5vw;
+    padding-left: 2vw;
+  }
+  
+  .star {
+    color: gold;
+    font-size: 24px;
+  }
+  .shoplogo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    padding: 1vw 1.5vw;
+    border-top-left-radius: 30px;
+  }
+  .slidertw{
+    display: flex;
+    align-items: center;
+    padding-top: 7vw;
+  }
+  /* Make sure parent does not clip overflow */
+.foodSection {
+    overflow: visible !important;
+  }
+  
+  /* Slider container */
+  .slider-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Smooth snap scrolling */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hides scrollbar */
+    min-height: 1vh;
+    margin-top: 5vw;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  /* Flexbox slider */
+  .slider {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  .foodCardContent{
+    text-align: center;
+    padding-top: 4vw;
+  }
+  /* FoodCard styling */
+  .foodCard {
+    min-width: 250px; /* Adjust card size */
+    max-width: 280px;
+    min-height: 10vh;
+    background: white;
+    padding: 50px 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: visible !important;
+    position: relative;
+    text-align: center;
+    scroll-snap-align: center; /* Ensures smooth snapping */
+  }
+  
+  /* Move the image outside the card */
+  .logo2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .logo2 img {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    object-fit: cover;
+    background: white;
+  }
+  @media (max-width: 768px) {
+    .foodCard{
+        min-width: 97vw;
+    }
+    .foodCardContent{
+        padding-top: 33vw;
+    }
+    .foodCardContent p{
+    font-size: 8.5vw;
+    padding-top: 9vw;
+}
+.foodCardContent h6{
+    font-size: 5vw;
+}
+.foodCard{
+    height: 60vh;
+}
+.foodrating{
+    margin-top: 8vw;
+}
+
+.logo2 {
+    position: absolute;
+    top: 14%;
+}
+.shoplogo{
+    padding: 7vw 7vw;
+}
+.shoplogo svg{
+    width: 10vw;
+}
+
+
+.foodprice p {
+    font-size: 9vw;
+    font-weight: bold;
+}
+
+
+.stars-container {
+    padding-bottom: 4.5vw;
+}
+
+.star {
+    color: gold;
+    font-size: 33px;
+}
+}

@@ -6,6 +6,7 @@ import Pages from "./pages/Pages/Pages"
 import Blog from "./pages/Blog/Blog"
 import Contact from "./pages/Contact/Contact"
 import Navbarr from "./components/Navbarr"
+import AboutRest from "./pages/AboutRestaurant/AboutRest"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Aboutres" element={<AboutRest />} />
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Pages" element={<Pages />} />
         <Route path="/Blog" element={<Blog />} />

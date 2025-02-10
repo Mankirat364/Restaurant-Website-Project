@@ -9,6 +9,7 @@ import locationimage from '../assets/location.png';
 import darkLogo from '../assets/logo-dark.svg';
 
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     const handleScroll = () => {
-      console.log("Window ScrollY:", window.scrollY); // Log actual scroll value
+      console.log("Window ScrollY:", window.scrollY); 
       setIsScrolled(window.scrollY > 50);
     };
 
@@ -42,7 +43,6 @@ const Navbar = () => {
   
   return (
     <div className="navbar">
-      {/* Top Navbar */}
       <div className="navbar-top">
         <div className="location">
           <img src={locationimage} alt="" />
@@ -63,14 +63,17 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Bottom Navbar */}
       <div className={`navbar-bottom ${isScrolled ? "fixed-nav" : ""}`}>
+        <Link to="/">
         <div className="logo">
           <img src={darkLogo} id="darkLogo" alt="" />
         </div>
+        </Link>
 
         <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-          <span>ABOUT</span>
+          <Link to="/Aboutres" style={{textDecoration: "none", color :"black"}}>
+          <span >ABOUT</span>
+          </Link>
 
           <div className="nav-item" onMouseEnter={() => toggleDropdown("shop")} onMouseLeave={() => toggleDropdown(null)}>
             <span className="pack">SHOP <MdArrowDropDown size={30} /></span>

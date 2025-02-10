@@ -1,0 +1,230 @@
+.specialMenu {
+    min-height: 100vh;
+    background: red;
+    margin-top: 2vw;
+    position: relative;
+    z-index: 1; 
+    
+}
+
+/* Moving Wave Effect */
+.specialMenu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7vw;
+    width: 300%; /* Extend width for smooth looping */
+    height: 100px;
+    
+    --mask:
+        radial-gradient(50px at 50% calc(100% - 70px), #000 99%, transparent 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(50px at 50% calc(100% + 40px), transparent 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    background: red;
+    
+
+    animation: moveWave 20s linear infinite;
+}
+
+@keyframes moveWave {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-33.33%); } 
+}
+
+@keyframes moveWave2 {
+    0% { transform: translateX(-33.33%); }
+    100% { transform: translateX(0); } 
+}
+
+.specialMenu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -4vw;
+    width: 300%; 
+    height: 100px; 
+
+    --mask:
+        radial-gradient(50px at 50% calc(0% + 70px), #000 99%, transparent 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(50px at 50% calc(0% - 40px), transparent 99%, #000 101%) 50% 30px/120px 100% repeat-x;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    background: red; 
+    
+    animation: moveWave 20s linear infinite;
+}
+.specmenuheading{
+    color: white;
+    position: relative;
+    text-align: center;
+}
+.specmenuheading {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 3vw;
+}
+.marqueeWrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.marqueeAnimation {
+    display: flex;
+    gap: 3vw;
+    width: max-content;
+}
+
+.marqueeItem {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+.outlineText {
+    color: transparent;
+    -webkit-text-stroke: 2px white; 
+    text-stroke: 2px white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.marqueeItem:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+@keyframes waveMove {
+    from {
+      transform: translateX(0);
+    }
+    to {
+transform: translateX(-50%);
+}
+}
+.foodchoice{
+    max-width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 12px;
+    height: 90vh;
+    position: relative;
+    z-index: 100;
+    margin-top: 1vw;
+}
+.specialMen2 {
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  /* Category Tabs */
+  .categoryTabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding-bottom: 1.5vw;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .categoryTabs button {
+    border: 2px solid black;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .categoryTabs .active {
+    background: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+  }
+  
+  /* Food List */
+  .foodList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .foodItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px dashed rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  
+  .foodItem img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px dotted red;
+  }
+  
+  .foodDetails h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .foodDetails p {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .foodPrice {
+    color: red;
+    font-weight: bold;
+    margin-left: auto;
+  }
+  @media (max-width: 768px){
+    .specialMenu {
+        margin-top: 10vw;
+    }
+    .specialMenu::after {
+        bottom: -12vw;
+    }
+    .specialMenu::before {
+        top: -12vw;
+    }
+    .specmenuheading {
+        font-size: 4.5vw;
+    }
+    .marqueeItem{
+        font-size: 13vw;
+    }
+    .foodchoice{
+        max-width: 95%;
+        height: 100% !important;
+    }
+    .foodList{
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .foodItem{
+        margin-top: 1vw;
+    }
+    .specialMenu {
+        min-height: 185vh;
+    }
+  }

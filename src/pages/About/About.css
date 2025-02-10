@@ -1,4 +1,140 @@
 .aboutpage{
     min-height: 100vh;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
+}
+.aboutdivider{
+    padding: 7vw;
+}
+.container-back{
+    width: 23vw;
+    height: 53vh;
+    border-radius: 12px;
+    position: relative;
+}
+.container-back img{
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+}
+.container-front{
+    width: 26vw;
+    height: 59vh;
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.container-front img{
+    width: 100%;
+    border-radius: 12px;
+    scale: 1.1;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+.aboutheading{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 10px;
+}
+.aboutheading p{
+    color: red;
+    font-weight: bolder;
+    padding-top: 1vw;
+}
+.aboutdesc{
+    border-bottom: 1px solid grey;
+    padding-bottom: 1vw;
+}
+.aboutdesc p{
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+.aboutdesc :nth-child(2){
+    font-size: 1vw;
+    font-weight: 500;
+    margin-top: -1vw;
+    color: rgb(143, 143, 143);
+}
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flexcolumn h1{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.flexcolumn p{
+    line-height: 1.2;
+    font-size: 1vw;
+    color: grey;
+}
+.borderright{
+    border-right: 1px solid grey;
+}
+.flexbox{
+    display: flex;
+}
+.borderobttom{
+    border-bottom: 1px solid grey;
+}
+.profilephoto{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid #faad39;
+}
+.profilephoto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .container-back {
+        width: 55vw;
+        height: 28vh;
+    }
+    .container-front {
+        width: 69vw;
+        height: 44vh;
+        position: absolute;
+        top: 0%;
+    }
+  .resposivebout{
+    margin-top: 24vw !important;
+  }
+  .aboutdesc :nth-child(2) {
+    font-size: 3vw;
+  }
+  .flexcolumn h1 {
+    font-size: 6vw;
+  }
+  .flexcolumn p {
+    font-size: 3.5vw;
+  }
+  .flexcolumn p:nth-child(1){
+    display: none;
+  }
+  .borderright{
+    border: none;
+  }
+  .profilephoto {
+    width: 19vh;
+    height: 8vh;
+  }
+  .aboutdesc p {
+    font-size: 6.5vw;
+    line-height: 1.1;
+}
+.aboutheading p {
+    padding-top: 4vw;
+}
+.aboutdesc{
+    margin-top: -2vw;
+}
 }
