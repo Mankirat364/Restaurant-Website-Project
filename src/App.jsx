@@ -10,9 +10,7 @@ import ShopDetails from "./pages/Shop/ShopDtails/ShopDetails"
 import Cart from "./pages/Shop/Cart/Cart"
 import Checkout from "./pages/Shop/Checkout/Checkout"
 import Footer from "./components/Footer/Footer"
-
-
-
+import AboutRest from "./pages/AboutRestaurant/AboutRest"
 
 
 function App() {
@@ -25,15 +23,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        {/* <Route path="/Aboutres" element={<AboutRest />} /> */}
+        <Route path="/Aboutres" element={<AboutRest />} />
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Shop-details" element={<ShopDetails />} />
         <Route path="/Cart" element={<Cart/>} />
         <Route path="/Checkout" element={<Checkout/>} />
-
         <Route path="/Pages" element={<Pages />} />
-      
-
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>

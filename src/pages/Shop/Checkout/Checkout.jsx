@@ -1,7 +1,7 @@
 import React from 'react';
 import './Checkout.css';
 import ShopHeader from '../../../components/ShopPage/ShopHeader';
-import Footer from '../../../components/Footer/Footer';
+
 
 
 const Checkout = () => {
@@ -114,7 +114,7 @@ const Checkout = () => {
 
                         <div className="container mt-5">
                             <div className="p-4 rounded input-bg">
-                                <div className="form-check">
+                                <div className="">
                                     <input className="form-check-input" type="radio" name="paymentMethod" id="bankTransfer"/>
                                     <label className="form-check-label fw-bold" htmlFor="bankTransfer">
                                         Direct Bank Transfer
@@ -124,7 +124,7 @@ const Checkout = () => {
                                     </p>
                                 </div>
 
-                                <div className="form-check">
+                                <div className="">
                                     <input
                                         className="form-check-input"
                                         type="radio"
@@ -149,7 +149,7 @@ const Checkout = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+           
         </>
     );
 }

@@ -60,8 +60,10 @@ const Navbar = () => {
     navigate('/Pages')
   }
 
-
-  
+  /****************Contact*****************/
+  const Contact = () =>{
+    navigate('/Contact')
+  }
   return (
     <div className="navbar">
       <div className="navbar-top">
@@ -135,7 +137,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <span>CONTACT</span>
+          <span onClick={Contact}>CONTACT</span>
         </div>
 
         <div className="nav-icons">

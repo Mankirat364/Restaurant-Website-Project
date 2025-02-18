@@ -171,7 +171,7 @@ const ShopDetails = () => {
           <button className="cart-btn">POST REVIEW</button>
         </div>
       </div>
-    <Footer/>
+   
     </>
   )
 }
