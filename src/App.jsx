@@ -7,6 +7,7 @@ import Blog from "./pages/Blog/Blog"
 import Contact from "./pages/Contact/Contact"
 import Navbarr from "./components/Navbarr"
 import AboutRest from "./pages/AboutRestaurant/AboutRest"
+import BlogDetails from "./components/BlogDetails/BlogDetails"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/Pages" element={<Pages />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/blogdetail" element={<BlogDetails />} />
       </Routes>
     </Router>
   )
