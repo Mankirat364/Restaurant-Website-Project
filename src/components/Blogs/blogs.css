@@ -1,0 +1,108 @@
+.blog-details-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.blog-card {
+  margin-bottom: 5px;
+}
+
+/* Blog Content */
+.blog-content {
+  width: 65%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+.blog-card {
+  position: relative;
+}
+.blog-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 45px;
+  background: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.blog-date span {
+  font-size: 15px;
+  font-weight: bold;
+}
+.blog-date small {
+  display: block;
+}
+.blog-image {
+  width: 100%;
+  border-radius: 8px;
+}
+.blog-info {
+  display: flex;
+  gap: 15px;
+  color: gray;
+  margin: 10px 0;
+}
+.blog-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.blog-description {
+  color: #555;
+}
+
+/* Sidebar */
+.blog-sidebar {
+  width: 30%;
+  background: #ffecec;
+  padding: 20px;
+  border-radius: 8px;
+}
+.search-bar h3,
+.categories h3 {
+  border-bottom: 2px solid red;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.search-box {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.search-box input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.search-box button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+.categories li {
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.categories li:hover {
+  background: #ffcccc;
+}
