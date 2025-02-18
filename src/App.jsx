@@ -9,6 +9,8 @@ import Navbarr from "./components/Navbarr"
 import ShopDetails from "./pages/Shop/ShopDtails/ShopDetails"
 import Cart from "./pages/Shop/Cart/Cart"
 import Checkout from "./pages/Shop/Checkout/Checkout"
+import Footer from "./components/Footer/Footer"
+
 
 
 
@@ -23,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-
+        {/* <Route path="/Aboutres" element={<AboutRest />} /> */}
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Shop-details" element={<ShopDetails />} />
         <Route path="/Cart" element={<Cart/>} />
@@ -35,6 +37,7 @@ function App() {
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </Router>
   )
 }

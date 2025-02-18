@@ -9,6 +9,7 @@ import locationimage from '../assets/location.png';
 import darkLogo from '../assets/logo-dark.svg';
 
 import "./Navbar.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     const handleScroll = () => {
-      console.log("Window ScrollY:", window.scrollY); // Log actual scroll value
+      console.log("Window ScrollY:", window.scrollY); 
       setIsScrolled(window.scrollY > 50);
     };
 
@@ -39,10 +40,30 @@ const Navbar = () => {
     console.log("isScrolled State Updated:", isScrolled); 
   }, [isScrolled]);
   console.log(isScrolled);
+
+  /****************navigation shop pages*****************/
+  const navigate = useNavigate();
+  const shop = () =>{
+    navigate('/Shop')
+  }
+  const ShopDetails = () =>{
+    navigate('/Shop-details')
+  }
+  const Cart = () =>{
+    navigate('/Cart')
+  }
+  const Checkout = () =>{
+    navigate('/Checkout')
+  }
+   /****************navigation pages*****************/
+   const Pages = () =>{
+    navigate('/Pages')
+  }
+
+
   
   return (
     <div className="navbar">
-      {/* Top Navbar */}
       <div className="navbar-top">
         <div className="location">
           <img src={locationimage} alt="" />
@@ -63,23 +84,26 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Bottom Navbar */}
       <div className={`navbar-bottom ${isScrolled ? "fixed-nav" : ""}`}>
+        <Link to="/">
         <div className="logo">
           <img src={darkLogo} id="darkLogo" alt="" />
         </div>
+        </Link>
 
         <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-          <span>ABOUT</span>
+          <Link to="/About" style={{textDecoration: "none", color :"black"}}>
+          <span >ABOUT</span>
+          </Link>
 
           <div className="nav-item" onMouseEnter={() => toggleDropdown("shop")} onMouseLeave={() => toggleDropdown(null)}>
             <span className="pack">SHOP <MdArrowDropDown size={30} /></span>
             {dropdown === "shop" && (
               <div className="dropdown">
-                <span>Shop</span>
-                <span>Shop Details</span>
-                <span>Cart</span>
-                <span>Check Out</span>
+                <span onClick={shop}>Shop</span>
+                <span onClick={ShopDetails}>Shop Details</span>
+                <span onClick={Cart}>Cart</span>
+                <span onClick={Checkout}>Check Out</span>
               </div>
             )}
           </div>
@@ -88,9 +112,14 @@ const Navbar = () => {
             <span className="pack">PAGES <MdArrowDropDown size={30} /></span>
             {dropdown === "pages" && (
               <div className="dropdown">
-                <span>About Us</span>
-                <span>FAQ</span>
+               <span onClick={ Pages}>Menu Style 1</span>
+                <span>Menu Style 2</span>
+                <span>Reservation</span>
+                <span>Services</span>
+                <span>Our Chef</span>
+                <span>Gallery</span>
                 <span>Testimonials</span>
+                <span>FAQ</span>
               </div>
             )}
           </div>

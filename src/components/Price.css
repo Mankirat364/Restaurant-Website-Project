@@ -1,0 +1,38 @@
+.pricesec{
+    min-height: 100vh;
+    background-color: white;
+}
+.burger{
+    padding-top: 8vw;
+}
+.burger img{
+    width: 40vw;
+}
+.sharp{
+    margin-top: 10vw;
+}
+.burgertext{
+    font-weight: bold;
+    font-size: 1.5vw !important;
+    color: black !important;
+}
+.sharp h6{
+    color: red;
+}
+  @media (max-width: 768px){
+    .burger img {
+        width: 93vw;
+    }
+    .sharp h2{
+        font-weight: 700;
+    }
+    .burgertext {
+        font-size: 4vw !important;
+    }
+    #BurgerButton{
+        display: block !important
+        }
+    #BurgerBuitton .button{
+        padding: 2vw 3vw;
+    }
+  }

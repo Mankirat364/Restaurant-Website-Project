@@ -1,0 +1,62 @@
+.foodtray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.food-item {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Hover Effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.food-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay i {
+    color: white;
+    font-size: 30px;
+}
+@media (max-width: 768px){
+    .foodtray{
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .food-item{
+        position: relative;
+        width: 88%;
+        height: 43vh;
+    }
+}

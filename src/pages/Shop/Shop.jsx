@@ -23,7 +23,7 @@ const Shop = () => {
     },
     {
       image: food_2,
-      name: "Egg and Cucumber",
+      name: "Lunch Foods",
       desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
       price: "4,500",
       rating: 5, 
@@ -31,7 +31,39 @@ const Shop = () => {
     },
     {
       image: food_3,
+      name: "Dinner Foods",
+      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      price: "4,500",
+      rating: 5, 
+      cart: <BsCartFill />,
+    },
+    {
+      image: food_1,
+      name: "Desert Foods",
+      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      price: "4,500",
+      rating: 5, 
+      cart: <BsCartFill />,
+    },
+    {
+      image: food_1,
       name: "Egg and Cucumber",
+      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      price: "4,500",
+      rating: 5, 
+      cart: <BsCartFill />,
+    },
+    {
+      image: food_2,
+      name: "Lunch Foods",
+      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      price: "4,500",
+      rating: 5, 
+      cart: <BsCartFill />,
+    },
+    {
+      image: food_3,
+      name: "Desert Foods",
       desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
       price: "4,500",
       rating: 5, 
@@ -55,7 +87,7 @@ const Shop = () => {
     },
     {
       image: food_2,
-      name: "Egg and Cucumber",
+      name: "Desert Foods",
       desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
       price: "4,500",
       rating: 5, 
@@ -63,39 +95,7 @@ const Shop = () => {
     },
     {
       image: food_3,
-      name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
-      price: "4,500",
-      rating: 5, 
-      cart: <BsCartFill />,
-    },
-    {
-      image: food_1,
-      name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
-      price: "4,500",
-      rating: 5, 
-      cart: <BsCartFill />,
-    },
-    {
-      image: food_1,
-      name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
-      price: "4,500",
-      rating: 5, 
-      cart: <BsCartFill />,
-    },
-    {
-      image: food_2,
-      name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
-      price: "4,500",
-      rating: 5, 
-      cart: <BsCartFill />,
-    },
-    {
-      image: food_3,
-      name: "Egg and Cucumber",
+      name: "Lunch Foods",
       desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
       price: "4,500",
       rating: 5, 
@@ -126,8 +126,8 @@ const Shop = () => {
                 <div className="text">
                   <h5>{item.name}</h5>
                   <p className="desc">{item.desc}</p>
-                  <div className="bottomText">
-                    <p className="price">${item.price}</p>
+                  <div className="shopbottomText">
+                    <p className="shopprice">${item.price}</p>
                     {/* Rating display */}
                     <p className="rating">
                       {[...Array(item.rating)].map((_, i) => (
