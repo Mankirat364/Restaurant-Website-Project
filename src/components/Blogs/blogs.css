@@ -80,7 +80,7 @@
 
 .search-box {
   display: flex;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
 }
