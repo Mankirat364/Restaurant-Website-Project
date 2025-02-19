@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
-  
 }
 
 .navbar-top {
@@ -16,20 +15,24 @@
   color: white;
   position: relative;
   overflow: hidden;
-  --mask:
-  radial-gradient(50.4px at 50% calc(100% - 70.5px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
-  radial-gradient(50.4px at 50% calc(100% + 40.5px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
-  
--webkit-mask: var(--mask);
-        mask: var(--mask);
-        top: -1vw;
-        
-      }
-      @keyframes waveMove {
-        from {
-          transform: translateX(0);
-        }
-        to {
+  --mask: radial-gradient(
+        50.4px at 50% calc(100% - 70.5px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(50.4px at 50% calc(100% + 40.5px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px 100% repeat-x;
+
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  top: -1vw;
+}
+@keyframes waveMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
     transform: translateX(-50%);
   }
 }
@@ -80,7 +83,6 @@
 
 .navbar-bottom {
   transition: 0.3s ease-in-out;
-  
 }
 
 .navbar-bottom::after {
@@ -91,15 +93,20 @@
   width: 200%;
   height: 60px;
   background-color: #fff;
-  
-  --mask:
-    radial-gradient(50.4px at 50% calc(100% - 70.5px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
-    radial-gradient(50.4px at 50% calc(100% + 40.5px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+
+  --mask: radial-gradient(
+        50.4px at 50% calc(100% - 70.5px),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 60px) 0/120px 100%,
+    radial-gradient(50.4px at 50% calc(100% + 40.5px), #0000 99%, #000 101%) 50%
+      calc(100% - 30px) / 120px 100% repeat-x;
 
   -webkit-mask: var(--mask);
-          mask: var(--mask);
+  mask: var(--mask);
   animation: waveMove 14s linear infinite;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 @keyframes waveMove {
   from {
@@ -117,45 +124,45 @@
     transform: translateX(0%);
   }
 }
-#darkLogo{
+#darkLogo {
   width: 12vw;
 }
-.location{
+.location {
   display: flex;
   align-items: center;
 }
-.auth{
+.auth {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.follow{
+.follow {
   padding-left: 1vw;
 }
-.initial{
+.initial {
   display: none;
 }
-.location, .auth {
+.location,
+.auth {
   font-size: 14px;
   padding-bottom: 3vw;
 }
-.location img{
+.location img {
   width: 3vh;
   height: 3vh;
 }
 .social-icons {
   display: flex;
   gap: 10px;
- 
 }
 
 .social-icons svg {
   cursor: pointer;
 }
-.button button{
+.button button {
   text-transform: uppercase;
   display: flex;
-  align-items: center ;
+  align-items: center;
   background-color: #eb0027;
   border: none;
   color: white;
@@ -164,8 +171,7 @@
   border-radius: 12px;
   gap: 6px;
 }
-.button{
-
+.button {
 }
 
 .logo {
@@ -217,12 +223,12 @@
   z-index: 2000;
   flex-direction: column;
 }
-.dropdown span{
+.dropdown span {
   border-bottom: 1px solid rgb(194, 194, 194);
 }
-.pack{
+.pack {
   display: flex;
-  align-items: center ;
+  align-items: center;
 }
 .dropdown span {
   padding: 10px;
@@ -235,38 +241,39 @@
 }
 
 @media (max-width: 768px) {
-  .location{
+  .location {
     display: none !important;
   }
-  body,html{
+  body,
+  html {
     overflow-x: hidden;
   }
   .auth {
     font-size: 14px;
     padding-bottom: 9vw;
-}
-.navbar-top{
-  top: -2vw;
-}
-.follow {
-  padding-top: 4.3vw;
-}
-.navbar-bottom {
-  padding: 11px 20px;
-}
-.navbar-bottom::after {
-  bottom: -15vw;
-}
-.button{
-  display: none;
-}
-#darkLogo {
-  width: 35vw;
-}
-.initial{
-  display: block;
-}
-.nav-links{
-  display: none;
-}
+  }
+  .navbar-top {
+    top: -2vw;
+  }
+  .follow {
+    padding-top: 4.3vw;
+  }
+  .navbar-bottom {
+    padding: 11px 20px;
+  }
+  .navbar-bottom::after {
+    bottom: -15vw;
+  }
+  .button {
+    display: none;
+  }
+  #darkLogo {
+    width: 35vw;
+  }
+  .initial {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
 }

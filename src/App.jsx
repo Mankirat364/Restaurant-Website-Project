@@ -1,20 +1,19 @@
-import { BrowserRouter as Router,Route, Routes, Link } from "react-router-dom"
-import Home from "./pages/Home/Home"
-import About from "./pages/About/About"
-import Shop from "./pages/Shop/Shop"
-import Pages from "./pages/Pages/Pages"
-import Blog from "./pages/Blog/Blog"
-import Contact from "./pages/Contact/Contact"
-import Navbarr from "./components/Navbarr"
-import ShopDetails from "./pages/Shop/ShopDtails/ShopDetails"
-import Cart from "./pages/Shop/Cart/Cart"
-import Checkout from "./pages/Shop/Checkout/Checkout"
-import Footer from "./components/Footer/Footer"
-import AboutRest from "./pages/AboutRestaurant/AboutRest"
-
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import BlogDetails from "./components/BlogDetails/BlogDetails";
+import Blogs from "./components/Blogs/blogs";
+import Footer from "./components/Footer/Footer";
+import Navbarr from "./components/Navbarr";
+import About from "./pages/About/About";
+import AboutRest from "./pages/AboutRestaurant/AboutRest";
+import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home/Home";
+import Pages from "./pages/Pages/Pages";
+import Cart from "./pages/Shop/Cart/Cart";
+import Checkout from "./pages/Shop/Checkout/Checkout";
+import Shop from "./pages/Shop/Shop";
+import ShopDetails from "./pages/Shop/ShopDtails/ShopDetails";
 
 function App() {
-
   return (
     <Router>
       {/* navigation bar here fixed */}
@@ -26,15 +25,16 @@ function App() {
         <Route path="/Aboutres" element={<AboutRest />} />
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Shop-details" element={<ShopDetails />} />
-        <Route path="/Cart" element={<Cart/>} />
-        <Route path="/Checkout" element={<Checkout/>} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Pages" element={<Pages />} />
-        <Route path="/Blog" element={<Blog />} />
+        <Route path="/Blogs" element={<Blogs />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/blogdetail" element={<BlogDetails />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
