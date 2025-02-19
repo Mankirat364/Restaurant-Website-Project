@@ -124,14 +124,12 @@ const Checkout = () => {
                                     </p>
                                 </div>
 
-                                <div className="">
+                                <div className="form-check">
                                     <input
                                         className="form-check-input"
                                         type="radio"
                                         name="paymentMethod"
                                         id="shipDifferent"
-
-
                                     />
                                     <label className="form-check-label fw-bold" htmlFor="shipDifferent">
                                         Ship To A Different Address?

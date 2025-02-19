@@ -110,7 +110,7 @@ const Navbar = () => {
             )}
           </div>
           
-          <div className="nav-item" onMouseEnter={() => toggleDropdown("pages")} onMouseLeave={() => toggleDropdown(null)}>
+          {/* <div className="nav-item" onMouseEnter={() => toggleDropdown("pages")} onMouseLeave={() => toggleDropdown(null)}>
             <span className="pack">PAGES <MdArrowDropDown size={30} /></span>
             {dropdown === "pages" && (
               <div className="dropdown">
@@ -124,7 +124,7 @@ const Navbar = () => {
                 <span>FAQ</span>
               </div>
             )}
-          </div>
+          </div> */}
 
           <div className="nav-item" onMouseEnter={() => toggleDropdown("blog")} onMouseLeave={() => toggleDropdown(null)}>
             <span className="pack">BLOG <MdArrowDropDown size={30} /></span>
