@@ -81,8 +81,10 @@ const Home = () => {
               {[...Array(slideCount)].map((_, index) => (
                 <div className={`slide ${index === currentIndex ? 'active' : ''}`} key={index}>
                   <p>{object.title}</p>
-                  <h1>Experience <div className="imagediv"><img src={bannerimage} alt="" /></div></h1>
-                  <h1 className='textfix'>Exquisite Dining</h1>
+                  <h1>Gourmet <div className="imagediv"><img src={bannerimage} alt="" /></div></h1>
+                  <h1 className='textfix'>Dining/Café</h1>
+                  {/* <h1>Experience <div className="imagediv"><img src={bannerimage} alt="" /></div></h1>
+                  <h1 className='textfix'>Exquisite Dining</h1> */}
                   <p className='descri'>
                     Indulge in a culinary journey where flavors meet elegance.<br />
                     Discover handcrafted dishes made with the finest ingredients,<br />

@@ -72,12 +72,12 @@ const NewsBlog = () => {
     </div>
   
   
-      <Slider {...settings} className='logoSlider'>
+      {/* <Slider {...settings} className='logoSlider'>
         <div className='slideItem'><img src={logo1} alt="Logo 1" /></div>
         <div className='slideItem'><img src={logo2} alt="Logo 2" /></div>
         <div className='slideItem'><img src={logo3} alt="Logo 3" /></div>
         <div className='slideItem'><img src={logo4} alt="Logo 4" /></div>
-      </Slider>
+      </Slider> */}
     </div>
   );
 };
