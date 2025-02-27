@@ -1,4 +1,4 @@
-/* Section Styles */
+
 .our-chef-section {
     text-align: center;
     padding: 60px 10%;
@@ -19,12 +19,11 @@
     margin-bottom: 50px;
 }
 
-/* Chef Cards */
 .chef-cards {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: nowrap; /* Ensure all three chefs stay in one row */
+    flex-wrap: nowrap;
 }
 
 .chef-card {
@@ -35,23 +34,22 @@
     transition: 0.3s ease-in-out;
     position: relative;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    width: 30%; /* Each card takes 30% of the row */
+    width: 30%;
 }
 
 .chef-card:hover {
     transform: scale(1.05);
 }
-
-/* Image Hover Effect */
 .chef-image {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
+    height:50vh;
 }
 
 .chef-image img {
     width: 100%;
-    height: auto;
+    height: 50% !;
     border-radius: 12px;
     transition: transform 0.4s ease-in-out;
 }

@@ -19,7 +19,7 @@ import NewsBlog from '../../components/NewsBlog';
 const Home = () => {
   const object = {
     title: "Good Food, Good Mood",
-    longTitle: "Premium Restaurant/Cafes",
+    longTitle: "Exquisite Dining/Cafes",
     description: ""
   };
 
@@ -81,8 +81,8 @@ const Home = () => {
               {[...Array(slideCount)].map((_, index) => (
                 <div className={`slide ${index === currentIndex ? 'active' : ''}`} key={index}>
                   <p>{object.title}</p>
-                  <h1>Premium <div className="imagediv"><img src={bannerimage} alt="" /></div></h1>
-                  <h1 className='textfix'>Restaurant/Cafes</h1>
+                  <h1>Gourmet <div className="imagediv"><img src={bannerimage} alt="" /></div></h1>
+                  <h1 className='textfix'>Dining/Café</h1>
                   <p className='descri'>
                     It is a long established fact that a reader will be distracted by the readable<br/>  content of a 
                     page when looking at the layout.

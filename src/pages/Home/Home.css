@@ -35,8 +35,8 @@
 }
 .cardContainer2 img{
     position: absolute;
-    width:35vw;
-    left: 3%;
+    width:45vw;
+    left: 0%;
     top: 50%;
     transform: translate(0%,-50%);
 }

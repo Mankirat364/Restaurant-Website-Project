@@ -64,8 +64,8 @@ const Blogs = () => {
                 tincidunt erat gravida. Nullam dui libero, mollis ac quam et,
                 venenatis.
               </p>
-              <div className="button">
-                <button>
+              <div className="button" id="blogButton">
+                <button >
                   Order now <BsArrowRightSquareFill size={20} />
                 </button>
               </div>
