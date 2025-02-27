@@ -18,8 +18,8 @@ import NewsBlog from '../../components/NewsBlog';
 
 const Home = () => {
   const object = {
-    title: "Good Food, Good Mood",
-    longTitle: "Premium Restaurant/Cafes",
+    title: "Savor the Flavor",
+    longTitle: "A Culinary Delight Awaits",
     description: ""
   };
 
@@ -37,26 +37,26 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <motion.div 
+    <motion.div
       className='HomePage'
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       <div className="innerhomecontainer">
-        <motion.img 
+        <motion.img
           src={banner} alt="" id='banner'
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         />
-        <motion.img 
+        <motion.img
           src={vegie} alt="" id='vegie'
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -64,15 +64,15 @@ const Home = () => {
         />
 
         <div className="dividerContainer">
-          <motion.div 
+          <motion.div
             className="cardContainer"
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
           >
-           
-            <motion.div 
-              className="slider" 
+
+            <motion.div
+              className="slider"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -81,13 +81,15 @@ const Home = () => {
               {[...Array(slideCount)].map((_, index) => (
                 <div className={`slide ${index === currentIndex ? 'active' : ''}`} key={index}>
                   <p>{object.title}</p>
-                  <h1>Premium <div className="imagediv"><img src={bannerimage} alt="" /></div></h1>
-                  <h1 className='textfix'>Restaurant/Cafes</h1>
+                  <h1>Experience <div className="imagediv"><img src={bannerimage} alt="" /></div></h1>
+                  <h1 className='textfix'>Exquisite Dining</h1>
                   <p className='descri'>
-                    It is a long established fact that a reader will be distracted by the readable<br/>  content of a 
-                    page when looking at the layout.
+                    Indulge in a culinary journey where flavors meet elegance.<br />
+                    Discover handcrafted dishes made with the finest ingredients,<br />
+                    served in a warm and inviting ambiance.
                   </p>
-                  <motion.div 
+
+                  <motion.div
                     className="button" id='homebutton'
                     whileTap={{ scale: 0.9 }}
                   >
@@ -96,15 +98,15 @@ const Home = () => {
                 </div>
               ))}
             </motion.div>
-          </motion.div>{/*thisisend */} 
+          </motion.div>{/*thisisend */}
 
-          <motion.div 
+          <motion.div
             className="cardContainer2"
             initial={{ x: "100%", opacity: 0, scale: 0 }}
             animate={{ x: "0%", opacity: 1, scale: 1 }}
             transition={{ duration: 1.5, delay: 1.2, ease: "easeOut" }}
           >
-           <div className="navigateNumber">
+            <div className="navigateNumber">
               {[...Array(slideCount)].map((_, index) => (
                 <p
                   key={index}
@@ -122,7 +124,7 @@ const Home = () => {
           </motion.div>
         </div>
 
-        <motion.div 
+        <motion.div
           className="loaderflexbox"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

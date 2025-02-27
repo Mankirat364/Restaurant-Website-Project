@@ -108,7 +108,7 @@ const Checkout = () => {
                             <textarea
                                 className="form-control input-bg"
                                 rows="4"
-                                placeholder="2801 Lafayette Blvd, Norfolk, Vermont 23509, United States"
+                                placeholder="Maharastra"
                             ></textarea>
                         </div>
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import './Shop.css';
-import food_1 from '../../assets/food-1.png';
-import food_2 from '../../assets/food-2.png';
-import food_3 from '../../assets/food-3.png';
+import food_1 from '../../assets/food-1.jpg';
+import food_2 from '../../assets/food-2.jpg';
+import food_3 from '../../assets/food-3.jpg';
 import { BsCartFill } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
 import Paginations from '../../components/Paginations/Paginations';
@@ -16,7 +16,7 @@ const Shop = () => {
     {
       image: food_1,
       name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -24,7 +24,7 @@ const Shop = () => {
     {
       image: food_2,
       name: "Lunch Foods",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -32,7 +32,7 @@ const Shop = () => {
     {
       image: food_3,
       name: "Dinner Foods",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -40,7 +40,7 @@ const Shop = () => {
     {
       image: food_1,
       name: "Desert Foods",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -48,7 +48,7 @@ const Shop = () => {
     {
       image: food_1,
       name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -56,7 +56,7 @@ const Shop = () => {
     {
       image: food_2,
       name: "Lunch Foods",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -64,7 +64,7 @@ const Shop = () => {
     {
       image: food_3,
       name: "Desert Foods",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -72,7 +72,7 @@ const Shop = () => {
     {
       image: food_1,
       name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -80,7 +80,7 @@ const Shop = () => {
     {
       image: food_1,
       name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -88,7 +88,7 @@ const Shop = () => {
     {
       image: food_2,
       name: "Desert Foods",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -96,7 +96,7 @@ const Shop = () => {
     {
       image: food_3,
       name: "Lunch Foods",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -104,7 +104,7 @@ const Shop = () => {
     {
       image: food_1,
       name: "Egg and Cucumber",
-      desc: "It’s the perfect dining experience where every dish is crafted with fresh high quality",
+      desc: "Enjoy the refreshing crunch of cucumber paired with the richness of eggs.",
       price: "4,500",
       rating: 5, 
       cart: <BsCartFill />,
@@ -145,7 +145,7 @@ const Shop = () => {
         </div>
           <Paginations/>
       </div>
-          <Footer/>
+         
 
     </>
   );

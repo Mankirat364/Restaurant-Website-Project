@@ -62,6 +62,10 @@ const Navbar = () => {
   const Checkout =()=>{
     navigate('/Checkout')
   }
+  // COntact 
+  const Contact =()=>{
+    navigate('/Contact')
+  }
 
   return (
     <div className="navbar">
@@ -144,7 +148,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <span>CONTACT</span>
+          <span onClick={Contact}>CONTACT</span>
         </div>
 
         <div className="nav-icons">

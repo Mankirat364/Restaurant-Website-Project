@@ -231,6 +231,10 @@
     outline: none;
     margin-bottom: 15px;
   }
+.name img{
+  width:6vw;
+}
+  
   
 /**************** media query  ******************/
 
@@ -251,6 +255,9 @@
 }
 .review-para{
   margin:0;
+}
+.name img{
+  width:20vw;
 }
 
 }

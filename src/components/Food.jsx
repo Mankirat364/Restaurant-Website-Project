@@ -44,25 +44,27 @@ const Food = () => {
       transition={{ duration: 0.8, ease: "easeOut" }} 
       viewport={{ once: true }} 
     >
-      <div className="foodtitle">
-        <div className="foodhead">
-          <IoFastFoodSharp size={30} color='red' />
-          <div className="fooddesc"> 
-            <p>BEST FOOD</p>
-          </div>
-          <IoFastFoodSharp size={30} color='red' />
-        </div>
-        <h1>Popular Food Items</h1>
-      </div>
+     <div className="foodtitle">
+  <div className="foodhead">
+    <IoFastFoodSharp size={30} color='red' />
+    <div className="fooddesc"> 
+      <p>DELICIOUS BITES</p>
+    </div>
+    <IoFastFoodSharp size={30} color='red' />
+  </div>
+  <h1>Trending Dishes</h1>
+</div>
+
 
       {/* React Slick Slider */}
       <Slider {...settings} className="slider-container">
-        <FoodCard imageLink={food1} title="Egg and Cucumber" desc="Perfect dining experience with fresh high-quality ingredients." />
-        <FoodCard imageLink={food2} title="Chicken Fried Rice" desc="Perfect dining experience with fresh high-quality ingredients." />
-        <FoodCard imageLink={food3} title="Chicken Leg Piece" desc="Perfect dining experience with fresh high-quality ingredients." />
-        <FoodCard imageLink={food1} title="Egg and Cucumber" desc="Perfect dining experience with fresh high-quality ingredients." />
-        <FoodCard imageLink={food2} title="Chicken Fried Rice" desc="Perfect dining experience with fresh high-quality ingredients." />
-      </Slider>
+  <FoodCard imageLink={food1} title="Egg & Cucumber Delight" desc="A refreshing combination of farm-fresh eggs and crisp cucumbers." />
+  <FoodCard imageLink={food2} title="Savory Chicken Fried Rice" desc="A flavorful blend of seasoned rice." />
+  <FoodCard imageLink={food3} title="Crispy Chicken Leg Piece" desc="Juicy, golden-fried chicken leg, packed with bold flavors." />
+  <FoodCard imageLink={food1} title="Egg & Cucumber Delight" desc="A refreshing combination of farm-fresh eggs and crisp cucumbers." />
+  <FoodCard imageLink={food2} title="Savory Chicken Fried Rice" desc="A flavorful blend of seasoned rice." />
+</Slider>
+
     </motion.div>
   );
 }
