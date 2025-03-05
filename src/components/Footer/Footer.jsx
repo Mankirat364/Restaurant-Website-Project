@@ -15,9 +15,8 @@ const Footer = () => {
                         </div>
                         <div className="pt-4">
                             <p className='footer-para'>
-                                Phasellus ultricies aliquam volutpat <br />
-                                ullamcorper laoreet neque, a lacinia curabitur <br />
-                                lacinia mollis
+                            Lorem ipsum  Quasi vitae maiores aut sint, at quos quas eligendi. Veniam laborum dolores, br laudantium, doloribus commodi voluptatibus, ratione cum  <br /> voluptas quis cumque deleniti cupiditate. Magnam?
+
                             </p>
                         </div>
                         <div className="socialsite-icons">
