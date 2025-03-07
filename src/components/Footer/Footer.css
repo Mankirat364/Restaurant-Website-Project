@@ -1,11 +1,11 @@
 .footer{
     background-color: rgb(2, 2, 20);
-    background-image: url('../../assets/banner-vector-1.png'),
+    /* background-image: url('../../assets/banner-vector-1.png'),
     url('../../assets/footer-vector-2.svg'),
     url('../../assets/footer-vector-3.svg');
     background-size: 7% auto, 6% auto, 6% auto; 
     background-position: left 10rem, right 6% top -1rem, right 16% top 16rem; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
 }
 .footer-para{
     font-size: 14px;
@@ -33,6 +33,12 @@
     background-color: rgb(197, 19, 19);
     color:#fff;
 }
+.quick-link{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
 .email-input-field {
     position: relative; 
 }

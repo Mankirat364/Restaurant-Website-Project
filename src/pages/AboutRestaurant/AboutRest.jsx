@@ -4,10 +4,10 @@ import './AboutRes.css';
 import breadcrumber from '../../assets/breadcrumb-bg.jpg';
 import { Link } from 'react-router-dom';
 import About from '../About/About';
-import InnerCta from '../../components/InnerCta';
-import OurChef from '../../components/OurChef';
-import AboutTesti from '../../components/AboutTesti';
-import FoodtraySec from '../../components/foodtraySec';
+import InnerCta from '../../components/About&Home/InnerCta';
+import OurChef from '../../components/About&Home/OurChef';
+import AboutTesti from '../../components/About&Home/AboutTesti';
+import FoodtraySec from '../../components/About&Home/FoodtraySec';
 
 const marqueeVariants = {
   animate: {

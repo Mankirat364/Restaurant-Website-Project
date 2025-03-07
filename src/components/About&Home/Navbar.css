@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 13vh;
+  height: 11vh;
   width: 100vw;
   padding: 10px 5vw;
   background-color: #eb0027;
@@ -117,7 +117,7 @@
   }
 }
 #darkLogo {
-  width: 12vw;
+  width: 9vw;
 }
 .location {
   display: flex;
@@ -231,7 +231,9 @@
 .dropdown span:hover {
   color: #eb0027;
 }
-
+.mobile-navigation{
+  display: none;
+}
 @media (max-width: 768px) {
   .location {
     display: none !important;
@@ -240,6 +242,34 @@
   html {
     overflow-x: hidden;
   }
+  .mobile-navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    background-color: white;
+    border-left: 4px solid red;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+  }
+  .ul-list-navigation{
+    display: flex;
+    flex-direction: column;
+  }
+  .ul-list-navigation a{
+    color:black;
+    padding: 3vw 4vw;
+    border: 1px solid rgb(192, 192, 192);
+  }
+  .dropdown-content{
+    display: flex;
+    padding: 2vw 0vw;
+    flex-direction: column;
+    gap: 10px;
+  }
   .auth {
     font-size: 14px;
     padding-bottom: 9vw;
@@ -247,14 +277,30 @@
   .navbar-top {
     top: -2vw;
   }
+  .navigation-logo{
+    border-bottom: 1px solid rgb(155, 155, 155);
+  }
+  .profilephoto {
+    width: 8vh;
+    height: 8vh;
+}
   .follow {
     padding-top: 4.3vw;
   }
+  .foodCardContent {
+    padding-top: 36vw;
+}
+.button button{
+  padding-right: 3vw;
+  padding-left: 3vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
   .navbar-bottom {
     padding: 11px 20px;
-  }
+  }   
   .navbar-bottom::after {
-    bottom: -15vw;
+    bottom: -14vw;
   }
   .button {
     display: none;

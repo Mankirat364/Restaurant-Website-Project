@@ -77,19 +77,24 @@
     .DiscountSection {
         margin-top: -26vw;
     }
+    .discountContent{
+        padding: unset;
+        padding-top: 5vw;
+    }
     .disheading {
-        font-size: 7.5vw;
+        font-size: 10.5vw;
+        line-height: 1.1;
     }
     .queshead {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .quesdesc {
         margin-top: -3vw;
         color: rgb(94, 94, 94);
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .DiscHead {
-        font-size: 6.5vw;
+        font-size: 7.5vw;
     }
     .daysBlock {
         background-color: #faa019;
@@ -109,5 +114,8 @@
     .discountimagediv {
         width: 93vw;
         height: 46vh;
+    }
+    .discountContent :nth-child(1){
+        font-size: 5vw;
     }
 }

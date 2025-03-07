@@ -9,8 +9,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { IoCart } from "react-icons/io5";
-import reviewImg_2 from "../../../assets/reviewer-img-2.png";
-import shopdetails from "../../../assets/shop-details.png";
+import reviewImg_2 from "../../../assets/circular_image.png";
+import shopdetails from "../../../assets/pizza.jpg";
 import Footer from "../../../components/Footer/Footer";
 import ShopHeader from "../../../components/ShopPage/ShopHeader";
 
@@ -51,9 +51,7 @@ const ShopDetails = () => {
 
             <hr />
             <p className="details-para">
-              Aliquam hendrerit a augue insuscipit. Etiam aliquam massa quis des
-              mauris commodo venenatis ligula commodo leez sed blandit convallis
-              dignissim onec vel pellentesque neque.S
+            Crafted with precision and innovation, this product redefines quality and excellence. Designed to cater to your needs, it combines durability, style, and efficiency. Whether for everyday use or special occasions, its superior craftsmanship ensures a seamless experience. Made from high-quality materials.
             </p>
 
             <div className="container">
@@ -102,21 +100,9 @@ const ShopDetails = () => {
         <div className="product-description">
           <h4>Product Description</h4>
           <p className="details-para">
-            Neque porro est qui dolorem ipsum quia quaed inventor veritatis et
-            quasi architecto beatae vitae dicta sunt explicabo. Aelltes port
-            lacus quis enim var sed efficitur turpis gilla sed sit amet finibus
-            eros. Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. <br />
+          Crafted with precision and innovation, this product redefines quality and excellence. Designed to cater to your needs, it combines durability, style, and efficiency. Whether for everyday use or special occasions, its superior craftsmanship ensures a seamless experience. Made from high-quality materials, it stands the test of time while delivering unmatched performance. Elevate your lifestyle with a product that blends functionality with elegance, offering you the best in every aspect. <br />
             <br />
-            When an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining essentially
-            unchanged. Aelltes port lacus quis enim var sed efficitur turpis
-            gilla sed sit amet finibus eros. Neque porro est qui dolorem ipsum
-            quia quaed inventor veritatis et quasi architecto beatae vitae dicta
-            sunt explicabo. Aelltes port lacus quis enim var sed efficitur
-            turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply dummy
-            text of the printing and typesetting industry.
+            Crafted with precision and innovation, this product redefines quality and excellence. Designed to cater to your needs, it combines durability, style, and efficiency. Whether for everyday use or special occasions, its superior craftsmanship ensures a seamless experience. Made from high-quality materials, it stands the test of time while delivering unmatched performance. Elevate your lifestyle with a product that blends functionality with elegance, offering you the best in every aspect.
           </p>
         </div>
         <hr />
@@ -125,7 +111,7 @@ const ShopDetails = () => {
           <h4>02 Reviews</h4>
           <div className="reviewer">
             <div className="name">
-              <img className="" src={reviewImg_2} alt="" />
+              <img className="image" src={reviewImg_2} alt="" />
               <div className="identity">
                 <h5>Temptics Pro</h5>
                 <p className="details-para">March 20, 2023 at 2:37 pm</p>
@@ -151,14 +137,7 @@ const ShopDetails = () => {
           </div>
           <div className="review-para details-para">
             <p>
-              Phasellus eget fermentum mauris. Suspendisse nec dignissim nulla.
-              Integer non quam commodo, scelerisque felis id, eleifend turpis.
-              Phasellus in nulla quis erat tempor tristique eget vel purus.
-              Nulla pharetra pharetra pharetra. Praesent varius eget justo ut
-              lacinia. Phasellus pharetra, velit viverra lacinia consequat,
-              ipsum odio mollis dolor, nec facilisis arcu arcu ultricies sapien.
-              Quisque ut dapibus nunc. Vivamus sit amet efficitur velit.
-              Phasellus eget fermentum mauris. Suspendisse nec dignissim nulla
+            Experience excellence with our premium-quality product, crafted to meet the highest standards of innovation and design. Built with precision and care, it offers unmatched durability and performance, ensuring a seamless experience. Whether for daily use or special occasions, this product blends functionality with style, making it an essential addition to your collection. Designed for those who value quality, it promises reliability, elegance, and a touch of sophistication in every detail.
             </p>
           </div>
           <hr />
@@ -190,14 +169,7 @@ const ShopDetails = () => {
           </div>
           <div className="review-para details-para">
             <p>
-              Phasellus eget fermentum mauris. Suspendisse nec dignissim nulla.
-              Integer non quam commodo, scelerisque felis id, eleifend turpis.
-              Phasellus in nulla quis erat tempor tristique eget vel purus.
-              Nulla pharetra pharetra pharetra. Praesent varius eget justo ut
-              lacinia. Phasellus pharetra, velit viverra lacinia consequat,
-              ipsum odio mollis dolor, nec facilisis arcu arcu ultricies sapien.
-              Quisque ut dapibus nunc. Vivamus sit amet efficitur velit.
-              Phasellus eget fermentum mauris. Suspendisse nec dignissim nulla
+            Experience excellence with our premium-quality product, crafted to meet the highest standards of innovation and design. Built with precision and care, it offers unmatched durability and performance, ensuring a seamless experience. Whether for daily use or special occasions, this product blends functionality with style, making it an essential addition to your collection. Designed for those who value quality, it promises reliability, elegance, and a touch of sophistication in every detail.
             </p>
           </div>
         </div>

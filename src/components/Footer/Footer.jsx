@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from '../../assets/logo-light.svg';
+// import logo from '../../assets/logo-light.svg';
 import { LiaFacebookF } from "react-icons/lia";
 import { FaLinkedinIn, FaYoutube, FaInstagramSquare, FaAngleDoubleRight, FaArrowRight } from "react-icons/fa";
 import './Footer.css';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="footer">
@@ -11,13 +11,12 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-4 pt-3 pt-5 mt-md-5">
                         <div className="logo">
-                            <img src={logo} alt="" />
+                            {/* <img src={logo} alt="" /> */}
                         </div>
                         <div className="pt-4">
                             <p className='footer-para'>
-                                Phasellus ultricies aliquam volutpat <br />
-                                ullamcorper laoreet neque, a lacinia curabitur <br />
-                                lacinia mollis
+                            Lorem ipsum  Quasi vitae maiores aut sint, at quos quas eligendi. Veniam laborum dolores, br laudantium, doloribus commodi voluptatibus, ratione cum  <br /> voluptas quis cumque deleniti cupiditate. Magnam?
+
                             </p>
                         </div>
                         <div className="socialsite-icons">
@@ -37,13 +36,12 @@ const Footer = () => {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="col-md-2 pt-3 pt-md-5 mt-md-5">
+                    <div className="col-md-2 pt-3 pt-md-5 mt-md-5 quick-link">
                         <h4 className='mb-4 text-white'>Quick Links</h4>
-                        <p className='footer-text'><FaAngleDoubleRight /> About Us</p>
-                        <p className='footer-text'><FaAngleDoubleRight /> Our Services</p>
-                        <p className='footer-text'><FaAngleDoubleRight /> Our Blogs</p>
-                        <p className='footer-text'><FaAngleDoubleRight /> FAQ’S</p>
-                        <p className='footer-text'><FaAngleDoubleRight /> Contact Us</p>
+                        <Link to='/About' className='footer-text'><FaAngleDoubleRight /> About Us</Link>
+                        <Link to='/Shop' className='footer-text'><FaAngleDoubleRight /> Our Shop</Link>
+                        <Link to='/Blogs' className='footer-text'><FaAngleDoubleRight /> Our Blogs</Link>
+                        <Link to='/Contact' className='footer-text'><FaAngleDoubleRight /> Contact Us</Link>
                     </div>
 
                     {/* Our Menu */}
@@ -67,12 +65,12 @@ const Footer = () => {
                                 <FaArrowRight />
                             </div>
                         </div>
-                        <div className="privacy-checkbox">
+                        {/* <div className="privacy-checkbox">
                             <input type="checkbox" id="privacy" />
                             <label htmlFor="privacy" className="privacy-label">
                                 <p className='footer-text'> I agree with the <a href="/privacy-policy" className="privacy-link">Privacy Policy</a></p>
                             </label>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

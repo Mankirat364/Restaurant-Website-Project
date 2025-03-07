@@ -72,17 +72,17 @@ const Contact = () => {
     {
       icon: <CiLocationOn size={32} />,
       header: 'Our Address',
-      para: '4517 Washington Ave. Manchester, Kentucky 39495',
+      para: 'Mumbai, Maharastra..',
     },
     {
       icon: <BsEnvelope size={32} />,
       header: 'info@exmple.com',
-      para: 'Email us anytime for any kind of query.',
+      para: 'Call us for immediate assistance.',
     },
     {
       icon: <MdOutlinePhoneInTalk size={32} />,
-      header: 'Hot: +208-666-01112',
-      para: '24/7/365 priority Live Chat and ticketing support.',
+      header: 'Hot: 1234567890',
+      para: 'Our team is always ready to assist you with any queries',
     },
     {
       icon: <TiStopwatch size={32} />,
@@ -152,7 +152,7 @@ const Contact = () => {
                 <div className="form-check mb-4">
                   <input type="radio" className="form-check-input" id="radioOption" name="option" />
                   <label className="form-check-label radio-text" htmlFor="radioOption">
-                    Collaboratively formulate principle capital. Progressively evolve user
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla.!
                   </label>
                 </div>
 

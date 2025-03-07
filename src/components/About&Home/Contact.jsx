@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoFastFoodSharp } from "react-icons/io5";
 import './Contact.css'
-import booking from '../assets/booking-bg.jpg'
+import booking from '../../assets/booking-bg.jpg'
 import { BsArrowRightSquareFill } from 'react-icons/bs';
 const Contact = () => {
   return (

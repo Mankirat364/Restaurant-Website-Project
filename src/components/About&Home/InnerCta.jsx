@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import './InnerCta.css';
-import pizzaImage from '../assets/inner-cta-img.png';
-import pizzatag from '../assets/inner-cta-discount-tag.png';
+// import pizzaImage from '../assets/inner-cta-img.png';
+import pizzaImage from '../../assets/pngegg.png';
+import pizzatag from '../../assets/inner-cta-discount-tag.png';
 
 const InnerCta = () => {
   const sectionRef = useRef(null);
@@ -22,7 +23,7 @@ const InnerCta = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          WELCOME FRESHEAT
+          WELCOME TO  RESTAURANT
         </motion.p>
 
         <motion.h1

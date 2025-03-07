@@ -115,11 +115,14 @@
 @media (max-width: 768px) {
     .videodiv {
         width: 90vw;
-        height: 50vh;
+        height: 65vh;
     }
     .play-button {
         width: 90px;
         height: 90px;
+    }
+    .videosection{
+        margin-top: -38vw;
     }
     .rotating-text {
         width: 100px;

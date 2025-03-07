@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import './foodtray.css';
-import foodimg1 from '../assets/foodimage1.jpg';
-import foodimg2 from '../assets/foodimage2.jpg';
-import foodimg3 from '../assets/foodimage3.jpg';
-import foodimg4 from '../assets/foodimage4.jpg';
-import foodimg5 from '../assets/foodimage4.jpg';
+import foodimg1 from '../../assets/foodimage1.jpg';
+import foodimg2 from '../../assets/foodimage2.jpg';
+import foodimg3 from '../../assets/foodimage3.jpg';
+import foodimg4 from '../../assets/foodimage4.jpg';
+import foodimg5 from '../../assets/foodimage4.jpg';
 
 const FoodtraySec = () => {
     const images = [foodimg1, foodimg2, foodimg3, foodimg4, foodimg5];

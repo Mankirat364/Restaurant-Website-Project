@@ -96,3 +96,9 @@ h4 {
 .slideItem img:hover {
     filter: grayscale(0%);
 }
+@media screen and (max-width : 768px) {
+    
+.newsCard{
+    width: 335px !important;
+}
+}

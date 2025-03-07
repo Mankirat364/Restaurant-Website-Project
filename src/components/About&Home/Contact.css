@@ -59,7 +59,7 @@
         display: none;
     }
     .Contact{
-        background-image: url('../assets//booking-bg.jpg');
+        background-image: url('../../assets/booking-bg.jpg');
         background-size: cover;
 
     }

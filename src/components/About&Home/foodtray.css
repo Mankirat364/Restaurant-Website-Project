@@ -59,4 +59,8 @@
         width: 88%;
         height: 43vh;
     }
+    .slider-container{
+        padding-left: 2vw;
+    }
+    
 }

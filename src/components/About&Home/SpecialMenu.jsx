@@ -4,28 +4,30 @@ import { IoFastFoodSharp } from "react-icons/io5";
 import "./SpecialMenu.css";
 
 const menuItems = [
-  "BURGER",
-  "CHICKEN PIZZA",
-  "GRILLED CHICKEN",
-  "PASTA",
-  "SANDWICH",
-  "TACOS",
-  "SALADS",
-  "SUSHI",
+  "CLASSIC BURGER",
+  "PEPPERONI PIZZA",
+  "BBQ GRILLED CHICKEN",
+  "CREAMY ALFREDO PASTA",
+  "TURKEY CLUB SANDWICH",
+  "SPICY TACOS",
+  "FRESH GARDEN SALAD",
+  "AUTHENTIC JAPANESE SUSHI",
 ];
+
 
 const categories = ["Fast Food", "Drink & Juice", "Chicken Pizza", "Fresh Pasta"];
 
 const allMenuItems = {
   "Fast Food": [
-    { id: 1, name: "Burger", price: "$10.99", img: "burger.png" },
-    { id: 2, name: "French Fries", price: "$5.99", img: "fries.png" },
-    { id: 3, name: "Burger", price: "$10.99", img: "burger.png" },
-    { id: 4, name: "French Fries", price: "$5.99", img: "fries.png" },
-    { id: 5, name: "Burger", price: "$10.99", img: "burger.png" },
-    { id: 6, name: "French Fries", price: "$5.99", img: "fries.png" },
-    { id: 7, name: "French Fries", price: "$5.99", img: "fries.png" },
-    { id: 8, name: "French Fries", price: "$5.99", img: "fries.png" },
+    { id: 1, name: "Classic Cheeseburger", price: "$11.99", img: "cheese_burger.png" },
+    { id: 2, name: "Crispy Onion Rings", price: "$6.49", img: "onion_rings.png" },
+    { id: 3, name: "Spicy Chicken Burger", price: "$12.99", img: "spicy_chicken_burger.png" },
+    { id: 4, name: "Loaded Nachos", price: "$7.99", img: "nachos.png" },
+    { id: 5, name: "BBQ Bacon Burger", price: "$13.49", img: "bbq_burger.png" },
+    { id: 6, name: "Garlic Parmesan Fries", price: "$6.99", img: "garlic_fries.png" },
+    { id: 7, name: "Buffalo Wings", price: "$9.99", img: "buffalo_wings.png" },
+    { id: 8, name: "Mozzarella Sticks", price: "$7.49", img: "mozzarella_sticks.png" },
+    
   ],
   "Drink & Juice": [
     { id: 9, name: "Orange Juice", price: "$4.99", img: "juice.png" },
@@ -38,24 +40,26 @@ const allMenuItems = {
     { id: 16, name: "Coca Cola", price: "$2.99", img: "coke.png" },
   ],
   "Chicken Pizza": [
-    { id: 17, name: "BBQ Chicken Pizza", price: "$12.99", img: "pizza.png" },
-    { id: 18, name: "Spicy Chicken Pizza", price: "$13.99", img: "spicy_pizza.png" },
-    { id: 19, name: "BBQ Chicken Pizza", price: "$12.99", img: "pizza.png" },
-    { id: 20, name: "Spicy Chicken Pizza", price: "$13.99", img: "spicy_pizza.png" },
-    { id: 21, name: "BBQ Chicken Pizza", price: "$12.99", img: "pizza.png" },
-    { id: 22, name: "Spicy Chicken Pizza", price: "$13.99", img: "spicy_pizza.png" },
-    { id: 23, name: "BBQ Chicken Pizza", price: "$12.99", img: "pizza.png" },
-    { id: 24, name: "Spicy Chicken Pizza", price: "$13.99", img: "spicy_pizza.png" },
+    { id: 1, name: "Classic Cheeseburger", price: "$11.99", img: "cheese_burger.png" },
+    { id: 2, name: "Crispy Onion Rings", price: "$6.49", img: "onion_rings.png" },
+    { id: 3, name: "Spicy Chicken Burger", price: "$12.99", img: "spicy_chicken_burger.png" },
+    { id: 4, name: "Loaded Nachos", price: "$7.99", img: "nachos.png" },
+    { id: 5, name: "BBQ Bacon Burger", price: "$13.49", img: "bbq_burger.png" },
+    { id: 6, name: "Garlic Parmesan Fries", price: "$6.99", img: "garlic_fries.png" },
+    { id: 7, name: "Buffalo Wings", price: "$9.99", img: "buffalo_wings.png" },
+    { id: 8, name: "Mozzarella Sticks", price: "$7.49", img: "mozzarella_sticks.png" },
+    
   ],
   "Fresh Pasta": [
-    { id: 25, name: "Italian Pasta", price: "$14.99", img: "pasta.png" },
-    { id: 26, name: "Penne Alfredo", price: "$11.99", img: "alfredo.png" },
-    { id: 27, name: "Italian Pasta", price: "$14.99", img: "pasta.png" },
-    { id: 28, name: "Penne Alfredo", price: "$11.99", img: "alfredo.png" },
-    { id: 29, name: "Italian Pasta", price: "$14.99", img: "pasta.png" },
-    { id: 30, name: "Penne Alfredo", price: "$11.99", img: "alfredo.png" },
-    { id: 31, name: "Italian Pasta", price: "$14.99", img: "pasta.png" },
-    { id: 32, name: "Penne Alfredo", price: "$11.99", img: "alfredo.png" },
+    { id: 25, name: "Spaghetti Carbonara", price: "$13.99", img: "carbonara.png" },
+    { id: 26, name: "Penne Arrabbiata", price: "$12.49", img: "arrabbiata.png" },
+    { id: 27, name: "Fettuccine Alfredo", price: "$14.99", img: "fettuccine_alfredo.png" },
+    { id: 28, name: "Creamy Pesto Pasta", price: "$13.49", img: "pesto_pasta.png" },
+    { id: 29, name: "Lobster Ravioli", price: "$16.99", img: "lobster_ravioli.png" },
+    { id: 30, name: "Mushroom Truffle Pasta", price: "$15.49", img: "truffle_pasta.png" },
+    { id: 31, name: "Four Cheese Gnocchi", price: "$13.99", img: "gnocchi.png" },
+    { id: 32, name: "Tomato Basil Linguine", price: "$12.99", img: "linguine.png" },
+    
   ],    
 };
 

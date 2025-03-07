@@ -96,23 +96,31 @@
 }
 @media (max-width: 768px) {
     .container-back {
-        width: 55vw;
-        height: 28vh;
+        width: 75vw;
+        height: 35vh;
     }
     .container-front {
-        width: 69vw;
-        height: 44vh;
+        width: 80vw;
+        height: 51vh;
         position: absolute;
-        top: 0%;
+        top: 5%;
     }
   .resposivebout{
     margin-top: 24vw !important;
   }
   .aboutdesc :nth-child(2) {
-    font-size: 3vw;
+    font-size: 4vw;
+    font-weight: 400;
   }
   .flexcolumn h1 {
     font-size: 6vw;
+  }
+  .mychef{
+    width: 100%;
+  }
+  .aboutdivider{
+    padding: unset;
+    padding-top: 5vw;
   }
   .flexcolumn p {
     font-size: 3.5vw;
@@ -124,17 +132,42 @@
     border: none;
   }
   .profilephoto {
-    width: 19vh;
+    width: 8vh;
     height: 8vh;
-  }
+}
   .aboutdesc p {
-    font-size: 6.5vw;
+    font-size: 7.5vw;
     line-height: 1.1;
 }
 .aboutheading p {
     padding-top: 4vw;
+    font-size: 5vw;
 }
 .aboutdesc{
     margin-top: -2vw;
+}
+.pizza-img2 {
+    max-width: 356px;
+}
+.section-tag {
+    color: red;
+    font-size: 23px;
+}
+.our-chef-section{
+    text-align: center;
+    padding: 53px 0%;
+}
+.chef-card {
+    width: 92%;
+}
+.chef-info h3 {
+    font-size: 25px;
+}
+.chef-info p {
+    font-size: 21px;
+}
+.section-tag2 {
+    color: red;
+    font-size: 17px;
 }
 }

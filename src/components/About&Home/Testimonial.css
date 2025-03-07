@@ -182,4 +182,11 @@
     .cta-container{
         flex-direction: column;
     }
+  
+.testimonial-right h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 3vw;
+}
   }

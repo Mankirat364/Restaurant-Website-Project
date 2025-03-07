@@ -35,4 +35,17 @@
     #BurgerBuitton .button{
         padding: 2vw 3vw;
     }
+.sharp h6 {
+    color: red;
+    font-size: 5vw;
+}
+
+.sharp h7 {
+    color: red;
+    font-size: 5vw;
+}
+
+.pricesec {
+    padding-bottom: 6vw;
+}
   }

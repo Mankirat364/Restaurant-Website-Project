@@ -1,14 +1,15 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import './OurChef.css';
-import chef1 from '../assets/chef-1.jpg';
-import chef2 from '../assets/chef-2.jpg';
-import chef3 from '../assets/chef-3.jpg';
+import chef1 from '../../assets/chef-1.jpg';
+import chef2 from '../../assets/chef-2.jpg';
+import chef3 from '../../assets/chef-3.jpg';
 
 const chefs = [
-  { id: 1, name: 'Ralph Edwards', role: 'Sr. Chef', image: chef1 },
-  { id: 2, name: 'Devon Lane', role: 'Team Leader', image: chef2 },
-  { id: 3, name: 'Marvin McKinney', role: 'Nursing Assistant', image: chef3 }
+  { id: 1, name: 'Alexander Grant', role: 'Sr. Chef', image: chef1 },
+  { id: 2, name: 'Benjamin Carter', role: 'Team Leader', image: chef2 },
+  { id: 3, name: 'Daniel Reynolds', role: 'Sous Chef', image: chef3 }
+  
 ];
 
 const OurChef = () => {
@@ -23,9 +24,8 @@ const OurChef = () => {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <p className="section-tag">👨‍🍳 OUR CHEF</p>
-      <h2 className="section-title">Meet Our Expert Chef</h2>
-
+      <p className="section-tag">👨‍🍳 OUR HEAD CHEF</p>
+      <h2 className="section-title">Get to Know Our Culinary Master</h2>
       <div className="chef-cards">
         {chefs.map((chef, index) => (
           <motion.div 

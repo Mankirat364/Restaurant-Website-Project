@@ -4,29 +4,30 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Aboutesti.css';
-import girlbg from '../assets/girlbg.png';
-import user1 from '../assets/user1.png';
-import user2 from '../assets/user1.png';
-import user3 from '../assets/user1.png';
+import girlbg from '../../assets/girl_restaurant.jpg';
+import user1 from '../../assets/testimonial.jpg';
+import user2 from '../../assets/testimonial.jpg';
+import user3 from '../../assets/testimonial.jpg';
 import { FaQuoteLeft } from 'react-icons/fa';
 
 const testimonials = [
   {
     id: 1,
-    text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in classical Latin literature from 45 BC, making it over 2000 years old.",
+    text: "The food was absolutely amazing! Every dish was bursting with flavor, and the service was top-notch. I can't wait to come back!",
     user: user1,
   },
   {
     id: 2,
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries but also the leap into electronic typesetting.",
+    text: "A fantastic dining experience! The ambiance was cozy, the staff was friendly, and the meals were cooked to perfection. Highly recommend!",
     user: user2,
   },
   {
     id: 3,
-    text: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from Cicero's writings are also included.",
+    text: "One of the best restaurants I've ever visited! The presentation, taste, and hospitality exceeded my expectations. A must-visit place!",
     user: user3,
   },
 ];
+
 
 const AboutTesti = () => {
   const settings = {
@@ -44,8 +45,8 @@ const AboutTesti = () => {
   const isInView = useInView(sectionRef, { once: true });
 
   return (
-    <motion.div 
-      ref={sectionRef} 
+    <motion.div
+      ref={sectionRef}
       className="abouttestimsec"
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -53,20 +54,21 @@ const AboutTesti = () => {
     >
       <div className="testimonial-container2">
         {/* Left Section: Text & Slider */}
-        <motion.div 
+        <motion.div
           className="testimonial-text2"
           initial={{ opacity: 0, x: -50 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <p className="section-tag2">TESTIMONIALS</p>
-          <h2 className="section-title2">What have lots of happy customer feedback</h2>
+          <h2 className="section-title2">What Our Happy Customers Say</h2>
           <hr className="divider2" />
+
 
           <Slider {...settings} className="testimonial-slider2">
             {testimonials.map((testimonial) => (
-              <motion.div 
-                key={testimonial.id} 
+              <motion.div
+                key={testimonial.id}
                 className="testimonial-slide2"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -76,10 +78,10 @@ const AboutTesti = () => {
                 <p className="quote2">{testimonial.text}</p>
                 <div className="user-images2">
                   {testimonials.map((t) => (
-                    <motion.img 
-                      key={t.id} 
-                      src={t.user} 
-                      alt="User" 
+                    <motion.img
+                      key={t.id}
+                      src={t.user}
+                      alt="User"
                       className="user-icon2"
                       whileHover={{ scale: 1.2, rotate: 5 }}
                       transition={{ duration: 0.3 }}
@@ -92,13 +94,13 @@ const AboutTesti = () => {
         </motion.div>
 
         {/* Right Section: Image Animation */}
-        <motion.div 
+        <motion.div
           className="testimonial-image2"
           initial={{ opacity: 0, x: 50 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <motion.div 
+          <motion.div
             className="hexagon2"
             initial={{ scale: 0.8 }}
             animate={isInView ? { scale: 1 } : {}}

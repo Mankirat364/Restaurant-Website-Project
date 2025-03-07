@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Video.css';
-import videoimage from '../assets/video-cover.jpg';
+import videoimage from '../../assets/video-cover.jpg';
 import { FaPlay } from "react-icons/fa";
 
 const Video = () => {
@@ -23,7 +23,7 @@ const Video = () => {
                 <path id="circlePath" d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
                 <text>
                   <textPath href="#circlePath" startOffset="50%">
-                    PLAY VIDEO • PLAY VIDEO • PLAY VIDEO • PLAY VIDEO
+                    {/* PLAY VIDEO • PLAY VIDEO • PLAY VIDEO • PLAY VIDEO */}
                   </textPath>
                 </text>
               </svg>

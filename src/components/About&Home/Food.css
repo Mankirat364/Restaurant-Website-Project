@@ -149,9 +149,13 @@
   @media (max-width: 768px) {
     .foodCard{
         min-width: 97vw;
+        height: 74vh !important;
     }
     .foodCardContent{
         padding-top: 33vw;
+    }
+    .fooddesc p{
+        padding-top: 4vw;
     }
     .foodCardContent p{
     font-size: 8.5vw;
