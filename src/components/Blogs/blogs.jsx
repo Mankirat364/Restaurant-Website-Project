@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import blog1 from "../../assets/blogs-1.png";
-import blog2 from "../../assets/blogs-2.png";
-import blog3 from "../../assets/blogs-3.png";
+import blog1 from "../../assets/blog-img-1.jpg";
+import blog2 from "../../assets/blog-img-2.jpg";
+import blog3 from "../../assets/blog-img-3.jpg";
 import breadcrumber from "../../assets/breadcrumb-bg.jpg";
 import recentPost1 from "../../assets/recent-post-1.jpg";
 import recentPost2 from "../../assets/recent-post-2.jpg";
@@ -43,7 +43,7 @@ const Blogs = () => {
             <div
               key={index}
               className="blogs-card"
-              style={{ marginBottom: "5px" }} 
+              style={{ marginBottom: "5px" }}
             >
               <div className="blogs-date">
                 <span>15</span>
@@ -64,7 +64,7 @@ const Blogs = () => {
                 tincidunt erat gravida. Nullam dui libero, mollis ac quam et,
                 venenatis.
               </p>
-              <div className="button">
+              <div className="button" id="blogButton">
                 <button>
                   Order now <BsArrowRightSquareFill size={20} />
                 </button>
