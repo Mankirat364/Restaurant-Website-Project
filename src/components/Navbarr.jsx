@@ -15,7 +15,7 @@ import { MdArrowDropDown } from "react-icons/md";
 import locationimage from "../assets/location.png";
 import darkLogo from "../assets/logo-dark.svg";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -47,6 +47,25 @@ const Navbar = () => {
     console.log("isScrolled State Updated:", isScrolled);
   }, [isScrolled]);
   console.log(isScrolled);
+
+  // ShopePage Navigations 
+  const navigate = useNavigate();
+  const Shop = () => {
+    navigate('/Shop')
+  }
+  const ShopDetails =()=>{
+    navigate('/Shop-details')
+  }
+  const Cart =()=>{
+    navigate('/Cart')
+  }
+  const Checkout =()=>{
+    navigate('/Checkout')
+  }
+  // COntact 
+  const Contact =()=>{
+    navigate('/Contact')
+  }
 
   return (
     <div className="navbar">
@@ -95,12 +114,13 @@ const Navbar = () => {
             </span>
             {dropdown === "shop" && (
               <div className="dropdown">
-                <span>All Products</span>
-                <span>New Arrivals</span>
-                <span>Best Sellers</span>
+                <span onClick={Shop}>Shop</span>
+                <span  onClick={ShopDetails}>Shop Details</span>
+                <span onClick={Cart}>Cart</span>
+                <span onClick={Checkout}>Checkout</span>
               </div>
             )}
-          </div>
+          </div> 
 
           <div
             className="nav-item"
@@ -128,7 +148,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <span>CONTACT</span>
+          <span onClick={Contact}>CONTACT</span>
         </div>
 
         <div className="nav-icons">

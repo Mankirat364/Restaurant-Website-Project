@@ -354,7 +354,16 @@
   .blog-extra-images {
     flex-direction: column;
   }
+}
+@media (max-width: 768px) {
+  .blog-extra-images {
+    flex-direction: column;
+  }
 
+  .blog-extra-images img {
+    width: 100%;
+  }
+}
   .blog-extra-images img {
     width: 100%;
   }

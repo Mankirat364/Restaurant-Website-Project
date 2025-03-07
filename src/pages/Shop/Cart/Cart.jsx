@@ -1,8 +1,7 @@
 import React from 'react';
 import './Cart.css';
-import cartImg from '../../../assets/Cart.png';
+import cartImg from '../../../assets/food-3.png';
 import ShopHeader from '../../../components/ShopPage/ShopHeader';
-import Footer from '../../../components/Footer/Footer';
 
 
 const Cart = () => {

@@ -36,46 +36,48 @@ const NewsBlog = () => {
     
   return (
     <div className='newsBlogSection'>
-      <div className='newsHeader'>
-        <IoFastFoodSharp className='newsIcon' />
-        <span className='newsTitle'>LATEST NEWS & BLOG</span>
-        <h2>Our News & Events</h2>
-      </div>
-      <div className='newsCards'>
-        <div className='newsCard'>
-          <img src={blog1} alt='News 1' className='newsImage' />
-          <div className='newsContent'>
-            <span className='newsDate'>29 July 2024</span>
-            <span className='newsCategory'>By Admin | Burger</span>
-            <h4>Do You Think About Cheese Pizza Recipes?</h4>
-            <a href='#' className='readMore'>Read More →</a>
-          </div>
-        </div>
-        <div className='newsCard'>
-          <img src={blog2} alt='News 2' className='newsImage' />
-          <div className='newsContent'>
-            <span className='newsDate'>29 July 2024</span>
-            <span className='newsCategory'>By Admin | Burger</span>
-            <h4>Chicken Strips With New Ingredients Made.</h4>
-            <a href='#' className='readMore'>Read More →</a>
-          </div>
-        </div>
-        <div className='newsCard'>
-          <img src={blog3} alt='News 3' className='newsImage' />
-          <div className='newsContent'>
-            <span className='newsDate'>29 July 2024</span>
-            <span className='newsCategory'>By Admin | Burger</span>
-            <h4>Do You Think About Cheese Pizza Recipes?</h4>
-            <a href='#' className='readMore'>Read More →</a>
-          </div>
+    <div className='newsHeader'>
+      <IoFastFoodSharp className='newsIcon' />
+      <span className='newsTitle'>LATEST UPDATES & ARTICLES</span>
+      <h2>Stay Informed with Our News & Events</h2>
+    </div>
+    <div className='newsCards'>
+      <div className='newsCard'>
+        <img src={blog1} alt='News 1' className='newsImage' />
+        <div className='newsContent'>
+          <span className='newsDate'>29 July 2024</span>
+          <span className='newsCategory'>By Admin | Recipes</span>
+          <h4>Exploring the Secrets Behind the Perfect Cheese Pizza</h4>
+          <a href='#' className='readMore'>Read More →</a>
         </div>
       </div>
-      <Slider {...settings} className='logoSlider'>
+      <div className='newsCard'>
+        <img src={blog2} alt='News 2' className='newsImage' />
+        <div className='newsContent'>
+          <span className='newsDate'>29 July 2024</span>
+          <span className='newsCategory'>By Admin | New Dishes</span>
+          <h4>Discover the Magic of Our New Chicken Strips Recipe</h4>
+          <a href='#' className='readMore'>Read More →</a>
+        </div>
+      </div>
+      <div className='newsCard'>
+        <img src={blog3} alt='News 3' className='newsImage' />
+        <div className='newsContent'>
+          <span className='newsDate'>29 July 2024</span>
+          <span className='newsCategory'>By Admin | Food Trends</span>
+          <h4>Why Cheese Pizza Continues to Be a Fan Favorite</h4>
+          <a href='#' className='readMore'>Read More →</a>
+        </div>
+      </div>
+    </div>
+  
+  
+      {/* <Slider {...settings} className='logoSlider'>
         <div className='slideItem'><img src={logo1} alt="Logo 1" /></div>
         <div className='slideItem'><img src={logo2} alt="Logo 2" /></div>
         <div className='slideItem'><img src={logo3} alt="Logo 3" /></div>
         <div className='slideItem'><img src={logo4} alt="Logo 4" /></div>
-      </Slider>
+      </Slider> */}
     </div>
   );
 };

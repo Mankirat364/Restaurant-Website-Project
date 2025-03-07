@@ -4,14 +4,14 @@ import Blogs from "./components/Blogs/blogs";
 import Footer from "./components/Footer/Footer";
 import Navbarr from "./components/Navbarr";
 import About from "./pages/About/About";
-import AboutRest from "./pages/AboutRestaurant/AboutRest";
-import Contact from "./pages/Contact/Contact";
+import AboutRest from "./pages/AboutRestaurant/AboutRest";;
 import Home from "./pages/Home/Home";
 import Pages from "./pages/Pages/Pages";
 import Cart from "./pages/Shop/Cart/Cart";
 import Checkout from "./pages/Shop/Checkout/Checkout";
 import Shop from "./pages/Shop/Shop";
 import ShopDetails from "./pages/Shop/ShopDtails/ShopDetails";
+import Contact from './pages/Contact/Contact'
 
 function App() {
   return (

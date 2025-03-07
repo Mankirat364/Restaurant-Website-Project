@@ -53,25 +53,24 @@ const Price = () => {
             animate={isInView ? "visible" : "hidden"}
           >
             <h6>
-              <IoFastFoodSharp color="red" /> WE PUT 100% OF LOVE AND
-              DEDICATION
+              <IoFastFoodSharp color="red" /> Crafted with 100% Passion & Dedication
             </h6>
             <h2>
-              Creating the Best Dining
-              <br /> Experience for Families.
+              Elevating Your Dining Experience
+              <br /> A Perfect Treat for Families!
             </h2>
             <p>
-              Every dish is not just prepared; it's crafted with utmost precision
-              and a deep understanding of flavor harmony.
+              Every dish is a masterpiece, prepared with precision and a deep love for flavors that delight your taste buds.
             </p>
             <hr />
+
 
             {/* List Items (only animates when in view) */}
             <div className="flexcolumn">
               {[
-                "Additional charge for premium toppings",
-                "Minimum of 2 required.",
-                "Premium toppings are fixed",
+                "Extra charge applies for premium toppings.",
+                "Minimum order of 2 required.",
+                "Premium toppings cannot be customized."
               ].map((text, i) => (
                 <motion.div
                   key={i}

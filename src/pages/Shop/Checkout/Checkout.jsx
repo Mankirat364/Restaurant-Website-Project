@@ -108,7 +108,7 @@ const Checkout = () => {
                             <textarea
                                 className="form-control input-bg"
                                 rows="4"
-                                placeholder="2801 Lafayette Blvd, Norfolk, Vermont 23509, United States"
+                                placeholder="Maharastra"
                             ></textarea>
                         </div>
 
@@ -124,14 +124,12 @@ const Checkout = () => {
                                     </p>
                                 </div>
 
-                                <div className="">
+                                <div className="form-check">
                                     <input
                                         className="form-check-input"
                                         type="radio"
                                         name="paymentMethod"
                                         id="shipDifferent"
-
-
                                     />
                                     <label className="form-check-label fw-bold" htmlFor="shipDifferent">
                                         Ship To A Different Address?
@@ -143,8 +141,6 @@ const Checkout = () => {
                                 </button>
                             </div>
                         </div>
-
-
 
                     </div>
                 </div>
