@@ -20,7 +20,7 @@ const Cart = () => {
         <>
            <ShopHeader title="CART PAGE" breadcrumb="Cart Page" />
             <div className="container mt-md-5">
-                <div className='overflowX: "auto"'>
+                <div style={{ overflowX: "auto" }}>
                     <table className="table">
                         <thead>
                             <tr>
@@ -46,12 +46,12 @@ const Cart = () => {
                                         {item.price}</div></td>
                                     <td>
                                         <div className="col-12 col-md-6">
-                                            <div class="quantity-container padding">
-                                                <div class="quantity">
-                                                    <input type="text" id="quantity" value="1" readonly />
-                                                    <div class="buttons">
-                                                        <button class="plus">+</button>
-                                                        <button class="minus">−</button>
+                                            <div className="quantity-container padding">
+                                                <div className="quantity">
+                                                    <input type="text" id="quantity" value="1" readOnly />
+                                                    <div className="buttons">
+                                                        <button className="plus">+</button>
+                                                        <button className="minus">−</button>
                                                     </div>
                                                 </div>
                                             </div>

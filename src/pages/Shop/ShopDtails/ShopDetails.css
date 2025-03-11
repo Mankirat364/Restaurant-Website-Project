@@ -9,9 +9,10 @@
 .shop-details-page{
   width:75vw;
 }
-
 .shop-details-image{
   width:30vw;
+  height:50vh;
+  object-fit: contain;
 }
 .item-name-price{
     display:flex;
@@ -240,13 +241,12 @@
 
 @media (max-width:567px){
   .shop-details-page{
-    width:100vw;
+    width:100%;
   }
   .shopdetails-bg{
     display:flex;
     justify-content:center;
     align-items: center;
-    background-color: #fefaf7;
     border-radius: 10px;
     height:50vh; 
 }
@@ -255,6 +255,10 @@
 }
 .review-para{
   margin:0;
+}
+.shop-details-image{
+  width:90%;
+  object-fit: contain;
 }
 .name img{
   width:20vw;
