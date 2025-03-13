@@ -167,6 +167,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
             >
+              <span onClick={() => navigateTo("/Shop")}>Shop </span>
               <span onClick={() => navigateTo("/Shop-details")}>Shop Details</span>
               <span onClick={() => navigateTo("/Cart")}>Cart</span>
               <span onClick={() => navigateTo("/Checkout")}>Checkout</span>
