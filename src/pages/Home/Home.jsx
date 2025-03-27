@@ -100,7 +100,7 @@ const Home = () => {
                 </div>
               ))}
             </motion.div>
-          </motion.div>{/*thisisend */}
+          </motion.div>
 
           <motion.div
             className="cardContainer2"

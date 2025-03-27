@@ -48,7 +48,6 @@ const Navbar = () => {
   }, [isScrolled]);
   console.log(isScrolled);
 
-  // ShopePage Navigations 
   const navigate = useNavigate();
   const Shop = () => {
     navigate('/Shop')
